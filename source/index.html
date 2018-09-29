@@ -24,22 +24,22 @@
 	<main class="main">
     <h1 class="visually-hidden"></h1>
     <section class="info">
-  		<div>
+  		<div class="info-image">
       <h2>Милые штуки ручной работы для дома</h2>  
       </div>
-      <div>
-        <button type="button">Предметы интерьера</button>
+      <div class="interior-stuf">
+        <a href="#" class="stuff-btn">Предметы интерьера</a>
       </div>
-      <div>
-        <button type="button">Детские игрушки</button>
+      <div class="toys">
+        <a class="toy-btn">Детские игрушки</a>
       </div>
     </section>
     <!-- Товары недели -->
-    <section>
+    <section class="weekly-item">
       <h2>Вязаные корзинки</h2>
       <small>Товар недели</small>
       <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-      <table>
+      <table class="item-info">
         <tr>
           <td>Цвет:</td>
           <td>«Тиффани»/серый</td>
@@ -54,43 +54,56 @@
         </tr>
       </table>
       <img src="http://placeholder.it/150x100">
-      <a href="#">Заказать</a>
+      <a href="#" class="button">Заказать</a>
     </section>
     <!-- О нас -->
-    <section>
+    <section class="pluses">
       <h2>Коротко о нас:</h2>
+      <div class="pluses-eco">
       <p>Экологически  чистые материалы</p>
+      </div>
+      <div class="pluses-style">
       <p>Скандинавский стиль по российской цене</p>
+      </div>
+      <div class="pluses-popular">
       <p>Увеличивает лайки на фотографиях</p>
+      </div>
+      <div class="pluses-make">
       <p>Связано вручную с любовью и умилением</p>
+      </div>
+      <div class="pluses-production">
       <p>Поддержка отечественного производителя</p>
+      </div>
+      <div class="pluses-pack">
       <p>Поставляется в подарочной упаковке</p>
+      </div>
     </section>
     <!-- Reviews/Отзывы -->
-    <section>
-      <h2>Отзывы</h2>
-      <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-      <span>Анастасия Красильникова @misssssiskras</span>
-      <button><span class="visually-hidden">стрелка влево</span></button>
-      <button><span class="visually-hidden">стрелка вправо</span></button>
-      <a href="#" class="button">Написать</a>
+    <section class="review">
+      <h2 class="review__tittle">Отзывы</h2>
+      <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+      <span class="review__author">Анастасия Красильникова @misssssiskras</span>
+      <button class="review__btn-before"><span class="visually-hidden">стрелка влево</span></button>
+      <button class="review__btn-after"><span class="visually-hidden">стрелка вправо</span></button>
+      <a href="#" class="review__feedback">Написать</a>
     </section>
 	</main>    
-<footer>
-    <div> class="social">
-      <ul class="social-buttons">
-        <li><a href="#"><span class="visually-hidden">Instagram</span></a></li>
-        <li><a href="#"><span class="visually-hidden">Facebook</span></a></li>
-        <li><a href="#"><span class="visually-hidden">Tweeter</span></a></li>
+<footer class="main-footer">
+    <div class="main-footer__social social">
+      <ul class="social__buttons">
+        <li class="social__buttons--instagram"><a href="#"><span class="visually-hidden">Instagram</span></a></li>
+        <li class="social__buttons--facebook"><a href="#"><span class="visually-hidden">Facebook</span></a></li>
+        <li class="social__buttons--Twitter"><a href="#"><span class="visually-hidden">Twitter</span></a></li>
       </ul>
     </div>
-    <div>
+    <div class="main-footer__copyright">
       <a href="#">
         Разработано
         <img src="http://placeholder.it/150x100">
       </a>
     </div>
   </footer>
+  <!-- модальное окно -->
   <section class="modal">
     <h2>Добавить в корзину</h2>
     <span>Выберите размер:</span>
