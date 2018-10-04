@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="sass/style.scss">
   </head>
   <body>
     <header class="header">
@@ -23,83 +25,83 @@
         </nav>
       </div>
     </header>
-	 <main class="main">
-    <section class="tittle-block">
-      <h1 class="tittle-block__tittle">Вязание на заказ</h1>
-    </section>
-    <section class="form-block">
-      <form>
-        <p class="form-block__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <fieldset class="radiobutton">
-          <legend class="radiobutton__tittle">Тип</legend>
-          <label class="radiobutton__text">
-            Аксессуар для интерьера
-            <input type="radio" name="accessories" class="radiobutton__button" checked>
-          </label>
-          <label class="radiobutton__text">
-            Детская игрушка
-            <input type="radio" name="toys" class="radiobutton__button">
-          </label>
-        </fieldset>
-        <fieldset class="checkbox">
-          <legend class="checkbox__tittle">Цвет</legend>
-          <label class="checkbox__text">
-            Белый
-            <input type="checkbox" name="white" id="color-white" class="checkbox__field">
-          </label>
-          <label class="checkbox__text">
-            Серый
-            <input type="checkbox" name="grey" id="color-grey" class="checkbox__field">
-          </label>
-          <label class="checkbox__text">
-            «Тиффани»
-            <input type="checkbox" name="tifany" id="color-tifany" class="checkbox__field">
-          </label>
-          <label class="checkbox__text">
-            Черный
-            <input type="checkbox" name="black" id="color-black" class="checkbox__field">
-          </label>
-          <label class="checkbox__text">
-            Розовый
-            <input type="checkbox" name="pink" id="color-pink" class="checkbox__field">
-          </label>
-          <label class="checkbox__text">
-            Оранжевый
-            <input type="checkbox" name="orange" id="color-orange" class="checkbox__field">
-          </label>
-        </fieldset>
-        <fieldset class="text-field">
-          <legend class="text-field__tittle">ФИО</legend>
-          <label class="text-field__text">
-            Имя:
-            <input type="text" name="name" id="text-name" placeholder="Введите ваше имя*" class="text-field__field">
-          </label>
-          <label class="text-field__text">
-            Фамилия:
-            <input type="text" name="surname" id="text-surname" placeholder="Укажите фамилию*" class="text-field__field">
-          </label>
-          <label class="text-field__text">
-            Отчество:
-            <input type="text" name="secondName" id="text-secondName" placeholder="Отчество, если желаете" class="text-field__field">
-          </label>
-        </fieldset>
-        <fieldset class="text-field">
-          <legend class="text-field__tittle">тел</legend>
+    <main class="main">
+      <section class="tittle-block">
+        <h1 class="tittle-block__tittle">Вязание на заказ</h1>
+      </section>
+      <section class="form-block">
+        <form>
+          <p class="form-block__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <fieldset class="radiobutton">
+            <legend class="radiobutton__tittle">Тип</legend>
+            <label class="radiobutton__text">
+              Аксессуар для интерьера
+              <input type="radio" name="accessories" class="radiobutton__button" checked>
+            </label>
+            <label class="radiobutton__text">
+              Детская игрушка
+              <input type="radio" name="toys" class="radiobutton__button">
+            </label>
+          </fieldset>
+          <fieldset class="checkbox">
+            <legend class="checkbox__tittle">Цвет</legend>
+            <label class="checkbox__text">
+              Белый
+              <input type="checkbox" name="white" id="color-white" class="checkbox__field">
+            </label>
+            <label class="checkbox__text">
+              Серый
+              <input type="checkbox" name="grey" id="color-grey" class="checkbox__field">
+            </label>
+            <label class="checkbox__text">
+              «Тиффани»
+              <input type="checkbox" name="tifany" id="color-tifany" class="checkbox__field">
+            </label>
+            <label class="checkbox__text">
+              Черный
+              <input type="checkbox" name="black" id="color-black" class="checkbox__field">
+            </label>
+            <label class="checkbox__text">
+              Розовый
+              <input type="checkbox" name="pink" id="color-pink" class="checkbox__field">
+            </label>
+            <label class="checkbox__text">
+              Оранжевый
+              <input type="checkbox" name="orange" id="color-orange" class="checkbox__field">
+            </label>
+          </fieldset>
+          <fieldset class="text-field">
+            <legend class="text-field__tittle">ФИО</legend>
+            <label class="text-field__text">
+              Имя:
+              <input type="text" name="name" id="text-name" placeholder="Введите ваше имя*" class="text-field__field">
+            </label>
+            <label class="text-field__text">
+              Фамилия:
+              <input type="text" name="surname" id="text-surname" placeholder="Укажите фамилию*" class="text-field__field">
+            </label>
+            <label class="text-field__text">
+              Отчество:
+              <input type="text" name="secondName" id="text-secondName" placeholder="Отчество, если желаете" class="text-field__field">
+            </label>
+          </fieldset>
+          <fieldset class="text-field">
+            <legend class="text-field__tittle">тел</legend>
             <input type="text" name="phonenumber" id="text-phonenumber" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="text-field__field">
-        </fieldset>
-        <fieldset class="text-field">
-          <legend class="text-field__text">E-mail</legend>
+          </fieldset>
+          <fieldset class="text-field">
+            <legend class="text-field__text">E-mail</legend>
             <input type="text" name="email" id="text-email" placeholder="Ваш Email*" class="text-field__field">
-        </fieldset>
-        <fieldset class="text-area">
-          <legend class="text-area__tittle">Доп</legend>
-          <textarea name="comment" id="comment-field" rows="10">Опишите все ваши пожелания к заказу</textarea class="text-area__field">
-        </fieldset>
-        <small class="form-block__comment"><sup>*</sup>Поля обязательны для заполнения</small>
-        <button type="submit" class="button">Отправить заказ</button>
-      </form>
-    </section>
-	 </main>    
+          </fieldset>
+          <fieldset class="text-area">
+            <legend class="text-area__tittle">Доп</legend>
+            <textarea name="comment" id="comment-field" rows="10">Опишите все ваши пожелания к заказу</textarea class="text-area__field">
+          </fieldset>
+          <small class="form-block__comment"><sup>*</sup>Поля обязательны для заполнения</small>
+          <button type="submit" class="button">Отправить заказ</button>
+        </form>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__social">
         <ul class="footer__buttons">

@@ -1,0 +1,13 @@
+.footer {
+  width: 320px;
+  @include centerblock;
+  @include flex;
+  padding: 0 30px;
+}
+.footer__social {
+  width: 320px;
+}
+.footer__social-list {
+  @include flex;
+  justify-content: space-around;
+}

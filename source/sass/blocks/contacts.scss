@@ -1,0 +1,17 @@
+.contacts {
+  width: 320px;
+  @include centerblock;
+  background-color: #ffffff;
+  padding: 75px 0;
+}
+.contacts__tittle {
+  @include textsize(18px, 30px);
+  margin:0;
+  padding: 0;
+  padding-left: 30px;
+}
+.contacts__table {
+  @include textsize(15px, 30px);
+  font-weight: normal;
+  padding-left: 30px;
+}

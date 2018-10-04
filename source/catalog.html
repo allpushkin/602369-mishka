@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="sass/style.scss">
   </head>
   <body>
     <header class="header">
@@ -23,7 +25,7 @@
         </nav>
       </div>
     </header>
-	  <main class="main">
+    <main class="main">
       <section class="tittle-block">
         <h1 class="tittle-block__tittle">Каталог товаров</h1>
       </section>
@@ -50,13 +52,13 @@
           <a href="#" class="product-item__button-basket"></a>
         </section>
       </section>
-        <section class="information-block">
-          <h2 class="information-block__tittle">Процесс производства</h2>
-          <img src="http://placeholder.it/150x100" class="information-block__image information-block__image--make-process">
-          <p class="information-block__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a href="#" class="information-block__button">Сделать заказ</a>
-        </section>
-    </main>    
+      <section class="information-block">
+        <h2 class="information-block__tittle">Процесс производства</h2>
+        <img src="http://placeholder.it/150x100" class="information-block__image information-block__image--make-process">
+        <p class="information-block__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a href="#" class="information-block__button">Сделать заказ</a>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__social">
         <ul class="footer__buttons">
@@ -72,31 +74,31 @@
         </a>
       </div>
     </footer>
-  <!-- модальное окно -->
+    <!-- модальное окно -->
     <section class="modal">
       <form class="modal__form">
         <h2 class="modal__tittle">Добавить в корзину</h2>
         <label class="modal__text">Выберите размер:</label>
-          <ul class="modal__list">
-            <li class="modal__item">
-              <label class="modal__list modal__list--size-s">
-                s
-                <input type="radio" name="s" id="small-size" checked>
-              </label>
-            </li>
-            <li class="modal__item">
-              <label class="modal__list modal__list--size-m">
-                m
-                <input type="radio" name="m" id="medium-size">
-              </label>
-            </li>
-            <li class="modal__item">
-              <label class="modal__list modal__list--size-l">
-                l
-                <input type="radio" name="l" id="large-size">
-              </label>  
-            </li>
-          </ul>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <label class="modal__list modal__list--size-s">
+              s
+              <input type="radio" name="s" id="small-size" checked>
+            </label>
+          </li>
+          <li class="modal__item">
+            <label class="modal__list modal__list--size-m">
+              m
+              <input type="radio" name="m" id="medium-size">
+            </label>
+          </li>
+          <li class="modal__item">
+            <label class="modal__list modal__list--size-l">
+              l
+              <input type="radio" name="l" id="large-size">
+            </label>
+          </li>
+        </ul>
         <button type="submit" class="button button--modal">Добавить</button>
       </form>
     </section>

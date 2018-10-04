@@ -1,0 +1,36 @@
+// ------
+// header
+// ------
+.header {
+  background-color: #ffffff;
+  width: 320px;
+  height: auto;
+  @include centerblock;
+}
+.header__logo {
+  display: flex;
+  justify-content: space-around;
+}
+.header-navigation {}
+.header__list-item  a {
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+}
+.header__button {}
+.header__button::after {
+  background-image: url(../../img/icon-menu-close.svg);
+}
+.header__menu-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+}
+.header__list-item {
+  padding: 20px 0;
+  magrin-bottom: 1px;
+  &:first-child{
+    margin-top: 1px;
+  }
+}

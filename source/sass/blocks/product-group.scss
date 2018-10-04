@@ -1,0 +1,24 @@
+.product-group {
+  width: 320px;
+  min-height: 103px;
+  @include centerblock;
+}
+.product-group__item {
+  background-color: #63d1bb;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 28px 23px 38px 18px;
+  &--dark-green {
+    background-color: #56c3b2;
+  }
+}
+.product-group__link {
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-right: 35px;
+}
+.product-group__image {
+  opacity: 0.3;
+}

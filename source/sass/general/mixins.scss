@@ -1,0 +1,12 @@
+@mixin centerblock {
+  margin: 0 auto;
+  padding: 0;
+}
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+@mixin textsize($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
