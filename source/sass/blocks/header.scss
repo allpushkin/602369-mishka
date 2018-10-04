@@ -19,7 +19,7 @@
 }
 .header__button {}
 .header__button::after {
-  background-image: url(../../img/icon-menu-close.svg);
+  background-image: url("../../img/icon-menu-close.svg");
 }
 .header__menu-list {
   display: flex;
