@@ -1,26 +1,31 @@
 .review {
-  width: 320px;
   @include centerblock;
   padding: 1px 30px;
-  background-color: #ffffff;
+  width: 320px;
+  background-color: $white;
 }
+
 .review__tittle {
   @include textsize(25px, 30px);
   margin-bottom: 35px;
 }
+
 .review__text {
   @include textsize(15px, 30px);
   font-weight: normal;
   margin-bottom: 30px;
 }
-.review__author{
+
+.review__author {
   margin-bottom: 5px;
   font-style: normal;
 }
+
 .review__author-link {
   @include textsize(17px, 30px);
   margin-right: 120px;
 }
+
 .review__btn-block {
   width: 260px;
   min-height: 52px;
@@ -29,6 +34,7 @@
   background-color: #ffffff;
   border: 1px solid #ececec;
   position: relative;
+
   &::after {
     width: 1px;
     height: 50px;

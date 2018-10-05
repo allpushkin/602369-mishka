@@ -1,0 +1,35 @@
+.modal {
+  @include centerblock;
+  width: 320px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 45px;
+  background-color: $white;
+}
+
+.modal__tittle {
+  @include textsize(25px, 30px);
+  @include reset-position;
+  display: block;
+  padding-left: 60px;
+  padding-right: 56px;
+  margin-bottom: 30px;
+}
+
+.modal__text {
+  @include textsize(15px, 30px);
+  display: block;
+  color: $dark-grey;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.modal__list {
+  @include flex;
+  @include reset-position;
+  justify-content: space-around;
+  list-style: none;
+  margin-bottom: 31px;
+}
