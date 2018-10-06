@@ -1,0 +1,38 @@
+.text-area {
+  @include reset-position;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.text-area__tittle {
+  @include textsize(17px, 16px);
+  @include flex;
+  width: 260px;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  text-align: left;
+  color: $green;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 198px;
+    height: 1px;
+    background-color: $green;
+  }
+}
+
+.text-area__field {
+  @include textsize(17px, 18px);
+  padding: 5px 15px;
+  color: $dark-grey;
+  width: 260px;
+  height: 142px;
+  border: 2px solid $black;
+}

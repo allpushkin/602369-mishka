@@ -3,24 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="sass/style.scss">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="header">
       <div class="header__logo">
-        <a href="index.html">
-          <img src="http://placeholder.it/150x100">
+        <a href="index.html" class="header__logo-link">
+          <img src="../img/logo-mobile.svg" class="header__logo-image" alt="Логотип Мишка">
         </a>
+        <button type="button" class="header__button"></button>
       </div>
       <div class="header__navigation">
-        <button type="button" class="header__button"></button>
         <nav class="header__menu">
           <ul class="header__menu-list">
-            <li class="header__list-item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="header__list-item"><a>Вязание на заказ</a></li>
-            <li class="header__list-item"><a href="#">Поиск по сайту</a></li>
-            <li class="header__list-item"><a href="#">Корзина: пока пуста</a></li>
+            <li class="header__list-item"><a href="catalog.html" class="header__list-link">Каталог товаров</a></li>
+            <li class="header__list-item"><a class="header__list-link">Вязание на заказ</a></li>
+            <li class="header__list-item"><a href="#" class="header__list-link header__list-link--search">Поиск по сайту</a></li>
+            <li class="header__list-item"><a href="#" class="header__list-link header__list-link--basket">Корзина: пока пуста</a></li>
           </ul>
         </nav>
       </div>
@@ -34,86 +33,90 @@
           <p class="form-block__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <fieldset class="radiobutton">
             <legend class="radiobutton__tittle">Тип</legend>
-            <label class="radiobutton__text">
-              Аксессуар для интерьера
+            <label class="radiobutton__block">
               <input type="radio" name="accessories" class="radiobutton__button" checked>
+              <span class="radiobutton__text">Аксессуар для интерьера</span>
             </label>
-            <label class="radiobutton__text">
-              Детская игрушка
+            <label class="radiobutton__block">
               <input type="radio" name="toys" class="radiobutton__button">
+              <span class="radiobutton__text">Детская игрушка</span>
             </label>
           </fieldset>
           <fieldset class="checkbox">
             <legend class="checkbox__tittle">Цвет</legend>
-            <label class="checkbox__text">
-              Белый
+            <label class="checkbox__block">
               <input type="checkbox" name="white" id="color-white" class="checkbox__field">
+              <span class="checkbox__text">Белый</span>
             </label>
-            <label class="checkbox__text">
-              Серый
+            <label class="checkbox__block">
               <input type="checkbox" name="grey" id="color-grey" class="checkbox__field">
+              <span class="checkbox__text">Серый</span>
             </label>
-            <label class="checkbox__text">
-              «Тиффани»
+            <label class="checkbox__block">
               <input type="checkbox" name="tifany" id="color-tifany" class="checkbox__field">
+              <span class="checkbox__text">«Тиффани»</span>
             </label>
-            <label class="checkbox__text">
-              Черный
+            <label class="checkbox__block">
               <input type="checkbox" name="black" id="color-black" class="checkbox__field">
+              <span class="checkbox__text">Черный</span>
             </label>
-            <label class="checkbox__text">
-              Розовый
+            <label class="checkbox__block">
               <input type="checkbox" name="pink" id="color-pink" class="checkbox__field">
+              <span class="checkbox__text">Розовый</span>
             </label>
-            <label class="checkbox__text">
-              Оранжевый
+            <label class="checkbox__block">
               <input type="checkbox" name="orange" id="color-orange" class="checkbox__field">
+              <span class="checkbox__text">Оранжевый</span>
             </label>
           </fieldset>
           <fieldset class="text-field">
             <legend class="text-field__tittle">ФИО</legend>
-            <label class="text-field__text">
-              Имя:
+            <label class="text-field__block">
+              <span class="text-field__text">Имя:</span>
               <input type="text" name="name" id="text-name" placeholder="Введите ваше имя*" class="text-field__field">
             </label>
-            <label class="text-field__text">
-              Фамилия:
+            <label class="text-field__block">
+              <span class="text-field__text">Фамилия:</span>
               <input type="text" name="surname" id="text-surname" placeholder="Укажите фамилию*" class="text-field__field">
             </label>
-            <label class="text-field__text">
-              Отчество:
+            <label class="text-field__block">
+              <span class="text-field__text">Отчество:</span>
               <input type="text" name="secondName" id="text-secondName" placeholder="Отчество, если желаете" class="text-field__field">
             </label>
           </fieldset>
           <fieldset class="text-field">
             <legend class="text-field__tittle">тел</legend>
-            <input type="text" name="phonenumber" id="text-phonenumber" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="text-field__field">
+            <label class="text-field__block">
+              <input type="text" name="phonenumber" id="text-phonenumber" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="text-field__field text-field__field--phone">
+            </label>
           </fieldset>
           <fieldset class="text-field">
-            <legend class="text-field__text">E-mail</legend>
-            <input type="text" name="email" id="text-email" placeholder="Ваш Email*" class="text-field__field">
+            <legend class="text-field__tittle">E-mail</legend>
+            <label class="text-field__block">
+              <input type="text" name="email" id="text-email" placeholder="Ваш Email*" class="text-field__field text-field__field--e-mail">
+            </label>
           </fieldset>
           <fieldset class="text-area">
             <legend class="text-area__tittle">Доп</legend>
-            <textarea name="comment" id="comment-field" rows="10">Опишите все ваши пожелания к заказу</textarea class="text-area__field">
+            <textarea name="comment" id="comment-field" rows="10" class="text-area__field">Опишите все ваши пожелания к заказу</textarea>
           </fieldset>
           <small class="form-block__comment"><sup>*</sup>Поля обязательны для заполнения</small>
-          <button type="submit" class="button">Отправить заказ</button>
+          <button type="submit" class="form-block__button button">Отправить заказ</button>
         </form>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__social">
-        <ul class="footer__buttons">
+        <ul class="footer__social-list">
           <li class="footer__buttons footer__buttons--instagram"><a href="#"><span class="visually-hidden">Instagram</span></a></li>
           <li class="footer__buttons footer__buttons--facebook"><a href="#"><span class="visually-hidden">Facebook</span></a></li>
           <li class="footer__buttons footer__buttons--Twitter"><a href="#"><span class="visually-hidden">Twitter</span></a></li>
         </ul>
       </div>
       <div class="footer__copyright">
-        <a href="#">
+        <a href="#" class="footer__copyright-link">
           Разработано
-          <img src="http://placeholder.it/150x100">
+          <img src="./img/logo-htmlacademy.svg" class="footer__copyright-image">
         </a>
       </div>
     </footer>

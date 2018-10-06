@@ -35,6 +35,7 @@
 
 .footer__copyright-link {
   @include flex;
+  color: $black;
   justify-content: center;
   height: 35px;
 }

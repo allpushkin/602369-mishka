@@ -1,0 +1,43 @@
+.checkbox {
+  @include reset-position;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.checkbox__tittle {
+  @include textsize(17px, 16px);
+  @include flex;
+  width: 260px;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  text-align: left;
+  color: $green;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 198px;
+    height: 1px;
+    background-color: $green;
+  }
+}
+
+.checkbox__block {
+  @include reset-position;
+  @include flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.checkbox__text {
+  @include textsize(17px, 18px);
+  display: block;
+  margin-right: 50px;
+  margin-left: 22px;
+}
