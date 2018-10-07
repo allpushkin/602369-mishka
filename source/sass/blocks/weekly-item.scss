@@ -1,0 +1,46 @@
+.weekly-item {
+  @include centerblock;
+  width: 320px;
+  padding: 30px;
+  background-color: $white;
+}
+
+.weekly-item__tittle {
+  @include textsize(25px, 30px);
+  @include reset-position;
+  margin-bottom: 10px;
+}
+
+.weekly-item__tittle-info {
+  line-height: 20px;
+  color: $green;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.weekly-item__text {
+  @include textsize(15px, 24px);
+  font-weight: normal;
+}
+
+.weekly-item__table {
+  @include textsize(15px, 24px);
+  text-align: left;
+  font-weight: normal;
+  display: block;
+  width: 260px;
+  margin-bottom: 28px;
+  border-collapse: collapse;
+}
+
+.weekly-item__table-list {
+  border-bottom: 1px solid #ececec;
+}
+
+.weekly-item__price {
+  display: block;
+  width: 260px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}

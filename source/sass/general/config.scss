@@ -1,0 +1,43 @@
+//
+//Font-weight
+//
+
+$normal-font: 400;
+$bold-font: 700;
+
+//
+// FONTS
+//
+
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  font-weight: $normal-font;
+  font-style: normal;
+
+  src: url("../fonts/opensans.woff") format("woff"),
+    url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  font-weight: $bold-font;
+  font-style: normal;
+
+  src: url("../fonts/opensansbold.woff") format("woff"),
+    url("../fonts/opensansbold.woff2") format("woff2");
+}
+
+//
+// COLOR
+//
+
+$white: #ffffff;
+$black: #000000;
+$green: #63d1bb;
+$dark-green: #56c3b2;
+$light-grey: #ececec;
+$grey: #ececec;
+$dark-grey: #444444;
+$block-grey: #f1f1f1;
+$footer-line: #e5e5e5;
+$border-grey: #ededed;

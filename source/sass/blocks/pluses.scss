@@ -1,0 +1,48 @@
+.pluses {
+  @include centerblock;
+  width: 320px;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.pluses__tittle {
+  @include textsize(25px, 30px);
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.pluses__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pluses__item {
+  @include textsize(17px, 20px);
+  padding: 20px 0;
+
+  &--eco {
+    margin-right: 80px;
+  }
+
+  &--style {
+    margin-right: 50px;
+  }
+
+  &--likes {
+    margin-right: 60px;
+  }
+
+  &--make {
+    margin-right: 30px;
+  }
+
+  &--gift {
+    margin-right: 50px;
+  }
+}
+
+.pluses__image {
+  margin-right: 200px;
+  margin-bottom: 15px;
+}

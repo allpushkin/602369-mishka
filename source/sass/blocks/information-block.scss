@@ -1,0 +1,56 @@
+.information-block {
+  @include centerblock;
+  @include flex;
+  flex-direction: column;
+  width: 320px;
+  background-color: $white;
+  padding: 30px;
+}
+
+.information-block__tittle {
+  @include textsize(17px, 24px);
+  @include reset-position;
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 60px;
+  padding-right: 12px;
+  border: 1px solid $light-grey;
+  border-bottom: none;
+}
+
+.information-block__image-block {
+  display: block;
+  width: 260px;
+  height: 150px;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.information-block__image {
+  padding-top: 36px;
+  padding-right: 79px;
+  padding-left: 79px;
+  padding-bottom: 36px;
+}
+
+.information-block__info {
+  @include reset-position;
+  width: 260px;
+  border: 1px solid $light-grey;
+  border-top: none;
+  padding: 33px;
+}
+
+.information-block__text {
+  @include textsize(13px, 24px);
+  font-weight: normal;
+  margin-bottom: 55px;
+}
+
+.information-block__button {
+  @include textsize(17px, 16px);
+  width: 192px;
+  padding: 15px 20px;
+}

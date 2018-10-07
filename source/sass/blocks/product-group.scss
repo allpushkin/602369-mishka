@@ -1,0 +1,30 @@
+.product-group {
+  @include centerblock;
+  width: 320px;
+}
+
+.product-group__item {
+  @include flex;
+  background-color: $green;
+  width: 320px;
+  padding-top: 25px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+
+  &--dark-green {
+    background-color: $dark-green;
+  }
+}
+
+.product-group__link {
+  @include textsize(19px, 24px);
+  display: block;
+  width: 130px;
+  color: $white;
+  margin-right: 83px;
+}
+
+.product-group__image {
+  opacity: 0.3;
+}

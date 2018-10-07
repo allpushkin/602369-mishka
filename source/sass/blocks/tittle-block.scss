@@ -1,0 +1,14 @@
+.tittle-block {
+  @include centerblock;
+  width: 320px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: $block-grey;
+  text-align: center;
+}
+
+.tittle-block__tittle {
+  @include textsize(27px, 30px);
+}
