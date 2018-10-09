@@ -1,18 +1,58 @@
 .info {
   @include centerblock;
+  @include wrapper;
   width: 320px;
-  height: 283px;
-  padding-top: 70px;
-  padding-right: 38px;
-  padding-left: 38px;
-  padding-bottom: 95px;
-  background-color: $light-grey;
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
+  background-color: $white;
+
+  &--wrapper {
+    padding-top: 70px;
+    padding-right: 38px;
+    padding-left: 38px;
+    padding-bottom: 95px;
+    background-color: $light-grey;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
 }
 
 .info__tittle {
   @include textsize(27px, 30px);
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .info {
+    width: $tablet-width;
+
+    &--wrapper {
+      padding-top: 163px;
+      padding-right: 85px;
+      padding-left: 85px;
+      padding-bottom: 295px;
+      background-image: url("../img/hero-tablet@1x.jpg");
+    }
+  }
+
+  .info__tittle {
+    @include textsize(43px, 50px);
+  }
+}
+
+@media (min-width: $desktop-change-width) {
+  .info {
+    width: $desktop-width;
+
+    &--wrapper {
+      padding-top: 165px;
+      padding-right: 273px;
+      padding-left: 273px;
+      padding-bottom: 295px;
+      background-image: url("../img/hero-desktop@1x.jpg");
+    }
+  }
+
+  .tittle {
+    @include textsize(53px, 57px);
+  }
 }

@@ -1,5 +1,6 @@
 .pluses {
   @include centerblock;
+  @include wrapper;
   width: 320px;
   padding: 30px;
   background-color: #ffffff;
@@ -8,6 +9,7 @@
 .pluses__tittle {
   @include textsize(25px, 30px);
   text-align: left;
+  display: block;
   margin-bottom: 30px;
 }
 
@@ -45,4 +47,52 @@
 .pluses__image {
   margin-right: 200px;
   margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .pluses {
+    @include tablet-desktop-padding;
+    width: $tablet-width;
+  }
+
+  .pluses__tittle {
+    @include textsize(53px, 57px);
+  }
+
+  .pluses__list {
+    @include flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .pluses__item {
+    @include reset-position;
+    @include textsize(20px, 22px);
+    display: block;
+    width: 250px;
+
+    &--eco {
+      order: 0;
+    }
+
+    &--style {
+      order: 2;
+    }
+
+    &--likes {
+      order: 4;
+    }
+
+    &--make {
+      order: 1;
+    }
+
+    &--production {
+      order: 3;
+    }
+
+    &--gift {
+      order: 5;
+    }
+  }
 }

@@ -1,5 +1,6 @@
 .weekly-item {
   @include centerblock;
+  @include wrapper;
   width: 320px;
   padding: 30px;
   background-color: $white;
@@ -43,4 +44,94 @@
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .weekly-item {
+    @include tablet-desktop-padding;
+    width: $tablet-width;
+    position: relative;
+
+    &--wrapper {
+      @include flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .weekly-item__tittle-block {
+    @include flex;
+    margin-bottom: 25px;
+  }
+
+  .weekly-item__tittle {
+    @include textsize(43px, 50px);
+    display: block;
+    width: 500px;
+    margin-right: 67px;
+  }
+
+  .weekly-item__tittle-info {
+    @include textsize(17px, 17px);
+    display: block;
+    width: 100px;
+    text-align: center;
+  }
+
+  .weekly-item__table-block {
+    width: 291px;
+  }
+
+  .weekly-item__text {
+    @include textsize(17px, 30px);
+  }
+
+  .weekly-item__table {
+    @include textsize(15px, 20px);
+  }
+
+  .weekly-item__image {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+  }
+}
+
+@media (min-width: $desktop-change-width) {
+  .weekly-item {
+    width: $desktop-width;
+  }
+
+  .weekly-item__tittle-block {
+    flex-direction: row-reverse;
+  }
+
+  .weekly-item__tittle {
+    @include textsize(53px, 57px);
+    margin-right: 0;
+    margin-left: 59px;
+    text-wrap: none;
+    width: 600px;
+  }
+
+  .weekly-item__table-block,
+  .weekly-item__price-block {
+    margin-left: 175px;
+  }
+
+  .weekly-item__table-block {
+    margin-bottom: 110px;
+  }
+
+  .weekly-item__price-block {
+    @include textsize(20px, 24px);
+  }
+
+  .weekly-item__price {
+    margin-bottom: 30px;
+  }
+
+  .weekly-item__button {
+    @include textsize(17px, 20px);
+  }
 }
