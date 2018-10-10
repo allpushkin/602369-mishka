@@ -2,14 +2,13 @@
   @include centerblock;
   @include wrapper;
   width: 320px;
-  background-color: $white;
+  background-color: $bg-info;
 
   &--wrapper {
     padding-top: 70px;
     padding-right: 38px;
     padding-left: 38px;
     padding-bottom: 95px;
-    background-color: $light-grey;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: top center;
@@ -24,6 +23,7 @@
 @media (min-width: $tablet-width) {
   .info {
     width: $tablet-width;
+    border-top: 1px solid $light-grey;
 
     &--wrapper {
       padding-top: 163px;

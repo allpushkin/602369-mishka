@@ -1,5 +1,6 @@
 .review {
   @include centerblock;
+  @include wrapper;
   padding: 1px 30px;
   width: 320px;
   background-color: $white;
@@ -42,5 +43,73 @@
     position: absolute;
     left: 130px;
     top: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    width: $tablet-width;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    &--wrapper {
+      @include tablet-desktop-padding;
+      @include flex;
+      flex-wrap: wrap;
+    }
+
+    .review__tittle {
+      @include textsize(43px, 50px);
+      order: 0;
+      display: block;
+      width: 336px;
+    }
+
+    .review__text {
+      @include textsize(17px, 30px);
+      order: 2;
+    }
+
+    .review__author-block {
+      order: 3;
+    }
+
+    .review__author {
+      @include textsize(18px, 24px);
+    }
+
+    .review__btn-block {
+      order: 4;
+    }
+
+    .review__button {
+      @include textsize(17px, 20px);
+      order: 1;
+      width: 175px;
+      height: 52px;
+    }
+  }
+}
+
+@media (min-width: $desktop-change-width) {
+  .review {
+    width: $desktop-width;
+
+    &--wrapper {
+      padding-left: 275px;
+    }
+
+    .review__tittle {
+      @include textsize(53px, 57px);
+    }
+
+    .review__author-block {
+      order: 3;
+    }
+
+    .review__author {
+      @include textsize(17px, 24px);
+    }
   }
 }

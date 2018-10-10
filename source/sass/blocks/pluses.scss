@@ -57,6 +57,8 @@
 
   .pluses__tittle {
     @include textsize(53px, 57px);
+    display: block;
+    margin-bottom: 40px;
   }
 
   .pluses__list {
@@ -70,6 +72,7 @@
     @include textsize(20px, 22px);
     display: block;
     width: 250px;
+    margin-bottom: 55px;
 
     &--eco {
       order: 0;
@@ -93,6 +96,20 @@
 
     &--gift {
       order: 5;
+    }
+  }
+}
+
+@media (min-width: $desktop-change-width) {
+  .pluses {
+    width: $desktop-width;
+
+    &--wrapper {
+      @include reset-position;
+      width: 790px;
+      padding-top: 85px;
+      padding-left: 175px;
+      padding-bottom: 85px;
     }
   }
 }
