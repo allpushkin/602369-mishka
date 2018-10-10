@@ -53,7 +53,7 @@
   .footer {
     width: $tablet-width;
 
-    &--wrapper {
+    &__wrapper {
       @include tablet-desktop-padding;
       @include flex;
       justify-content: space-around;

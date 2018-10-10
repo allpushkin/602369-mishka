@@ -1,14 +1,41 @@
 .tittle-block {
   @include centerblock;
+  @include wrapper;
   width: 320px;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-top: 75px;
-  padding-bottom: 75px;
   background-color: $block-grey;
-  text-align: center;
+
+  &__wrapper {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+  }
 }
 
 .tittle-block__tittle {
   @include textsize(27px, 30px);
+}
+
+@media (min-width: $tablet-width) {
+  .tittle-block {
+    width: $tablet-width;
+
+    &__wrapper {
+      padding-right: 190px;
+      padding-left: 150px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+
+  .tittle-block__tittle {
+    @include textsize(43px, 50px);
+  }
+}
+
+@media (min-width: $desktop-change-width) {
+  .tittle-block {
+    width: $desktop-width;
+  }
 }

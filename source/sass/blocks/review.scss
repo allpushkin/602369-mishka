@@ -53,7 +53,7 @@
     background-repeat: no-repeat;
     background-position: left top;
 
-    &--wrapper {
+    &__wrapper {
       @include tablet-desktop-padding;
       @include flex;
       flex-wrap: wrap;
@@ -96,7 +96,7 @@
   .review {
     width: $desktop-width;
 
-    &--wrapper {
+    &__wrapper {
       padding-left: 275px;
     }
 

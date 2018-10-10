@@ -1,13 +1,19 @@
 .product-item {
   @include centerblock;
-  @include flex;
-  flex-direction: column;
+  @include wrapper;
   width: 260px;
   background-color: $white;
   margin-bottom: 30px;
+
+  &__wrapper {
+    @include flex;
+    flex-direction: column;
+  }
 }
 
 .product-item__info {
+  @include flex;
+  flex-direction: column;
   width: 260px;
   border: 1px solid $border-grey;
   border-top: none;
@@ -36,4 +42,24 @@
 
 .product-item__price {
   @include textsize(15px, 24px);
+}
+
+@media (min-width: $tablet-width) {
+  .product-item {
+    width: 668px;
+
+    &__wrapper {
+      flex-direction: row;
+    }
+  }
+}
+
+@media (min-width: $desktop-change-width) {
+  .product-item {
+    width: 315px;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+  }
 }

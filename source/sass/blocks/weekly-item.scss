@@ -52,7 +52,7 @@
     width: $tablet-width;
     position: relative;
 
-    &--wrapper {
+    &__wrapper {
       @include flex;
       flex-direction: column;
       align-items: flex-start;

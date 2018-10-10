@@ -41,7 +41,7 @@
   .contacts {
     width: $tablet-width;
 
-    &--wrapper {
+    &__wrapper {
       @include tablet-desktop-padding;
     }
   }
@@ -74,7 +74,7 @@
   .contacts {
     width: $desktop-width;
 
-    &--wrapper {
+    &__wrapper {
       position: relative;
       padding-top: 35px;
       padding-bottom: 100px;
