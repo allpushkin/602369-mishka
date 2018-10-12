@@ -1,5 +1,5 @@
 .text-field {
-  @include reset-position;
+  @include wrapper;
   border: none;
   margin-bottom: 20px;
   background-color: $white;
@@ -55,17 +55,13 @@
 
 @media (min-width: $tablet-width) {
   .text-field {
-    @include tablet-desktop-padding;
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .text-field__flex-box {
-    @include flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
+    &__wrapper {
+      @include flex;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
   }
 
   .text-field__tittle {
@@ -106,7 +102,7 @@
   }
 }
 
-@media (min-width: $desktop-change-width) {
+@media (min-width: $desktop-width) {
   .text-field__tittle {
     width: 175px;
     margin-right: 0;

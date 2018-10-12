@@ -1,10 +1,7 @@
 .footer {
-  @include centerblock;
   @include wrapper;
   background-color: $block-grey;
-  width: 320px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 30px;
 }
 
 .footer__logo {
@@ -51,10 +48,7 @@
 
 @media (min-width: $tablet-width) {
   .footer {
-    width: $tablet-width;
-
     &__wrapper {
-      @include tablet-desktop-padding;
       @include flex;
       justify-content: space-around;
     }
@@ -67,11 +61,5 @@
 
   .footer__copyright {
     border: none;
-  }
-}
-
-@media (min-width: $desktop-change-width) {
-  .footer {
-    width: $desktop-width;
   }
 }

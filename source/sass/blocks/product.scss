@@ -1,7 +1,5 @@
 .product {
-  @include centerblock;
   @include wrapper;
-  width: 320px;
   background-color: $white;
 
   &__wrapper {
@@ -12,16 +10,8 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .product {
-    width: $tablet-width;
-  }
-}
-
-@media (min-width: $desktop-change-width) {
-  .product {
-    width: $desktop-width;
-
     &__wrapper {
       @include flex;
       justify-content: space-around;

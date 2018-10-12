@@ -1,14 +1,14 @@
 .product-group {
-  @include centerblock;
   @include wrapper;
-  width: 320px;
+  width: 100%;
   background-color: $white;
 }
 
 .product-group__item {
   @include flex;
+  @include centerblock;
   background-color: $green;
-  width: 100%;
+  width: $mobile-width;
   padding-top: 25px;
   padding-right: 30px;
   padding-left: 30px;
@@ -35,11 +35,10 @@
 
 @media (min-width: $tablet-width) {
   .product-group {
-    @include tablet-desktop-padding;
-    width: $tablet-width;
-
     &__wrapper {
+      @include tablet-desktop-padding;
       @include flex;
+      width: $tablet-width;
     }
   }
 
@@ -57,9 +56,11 @@
   }
 }
 
-@media (min-width: $desktop-change-width) {
+@media (min-width: $desktop-width) {
   .product-group {
-    width: $desktop-width;
+    &__wrapper {
+      width: $desktop-width;
+    }
   }
 
   .product-group__item {

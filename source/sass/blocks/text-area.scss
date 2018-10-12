@@ -1,7 +1,6 @@
 .text-area {
-  @include reset-position;
+  @include wrapper;
   border: none;
-  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -40,16 +39,10 @@
 
 @media (min-width: $tablet-width) {
   .text-area {
-    @include reset-position;
-    @include tablet-desktop-padding;
-    border: none;
-    margin-bottom: 50px;
-  }
-
-  .text-area__flex-block {
-    @include flex;
-    width: 100%;
-    align-items: flex-start;
+    &__wrapper {
+      @include flex;
+      align-items: flex-start;
+    }
   }
 
   .text-area__tittle {
@@ -70,7 +63,7 @@
   }
 }
 
-@media (min-width: $desktop-change-width) {
+@media (min-width: $desktop-width) {
   .text-area__tittle {
     width: 175px;
     padding-left: 62px;

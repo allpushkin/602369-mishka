@@ -1,7 +1,5 @@
 .tittle-block {
-  @include centerblock;
   @include wrapper;
-  width: 320px;
   background-color: $block-grey;
 
   &__wrapper {
@@ -19,8 +17,6 @@
 
 @media (min-width: $tablet-width) {
   .tittle-block {
-    width: $tablet-width;
-
     &__wrapper {
       padding-right: 190px;
       padding-left: 150px;
@@ -31,11 +27,5 @@
 
   .tittle-block__tittle {
     @include textsize(43px, 50px);
-  }
-}
-
-@media (min-width: $desktop-change-width) {
-  .tittle-block {
-    width: $desktop-width;
   }
 }

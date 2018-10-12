@@ -1,7 +1,5 @@
 .information-block {
-  @include centerblock;
   @include wrapper;
-  width: 320px;
   background-color: $white;
 
   &__wrapper {
@@ -60,14 +58,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .information-block {
-    width: $tablet-width;
-
-    &__wrapper {
-      @include tablet-desktop-padding;
-    }
-  }
-
   .information-block__tittle {
     @include textsize(20px, 24px);
     order: 1;
@@ -100,14 +90,9 @@
   }
 }
 
-@media (min-width: $desktop-change-width) {
+@media (min-width: $desktop-width) {
   .information-block {
-    width: $desktop-width;
-
     &__wrapper {
-      @include reset-position;
-      @include tablet-desktop-padding;
-      flex-direction: column;
       align-items: flex-end;
       flex-wrap: wrap;
       position: relative;

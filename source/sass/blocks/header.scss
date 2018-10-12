@@ -3,11 +3,12 @@
 // ------
 
 .header {
-  @include centerblock;
   @include wrapper;
   background-color: $white;
-  width: 320px;
-  position: relative;
+
+  &__wrapper {
+    position: relative;
+  }
 }
 
 .header__logo {
@@ -63,11 +64,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .header {
-    @include tablet-desktop-padding;
-    width: $tablet-width;
-  }
-
   .header__button {
     display: none;
   }
@@ -125,7 +121,6 @@
   }
 
   .header__list-link {
-
     &--search {
       @include textsize(0, 0);
     }
@@ -141,13 +136,8 @@
   }
 }
 
-@media (min-width: $desktop-change-width) {
-  .header {
-    width: $desktop-width;
-  }
-
+@media (min-width: $desktop-width) {
   .header__logo {
-
     order: 2;
   }
 

@@ -1,7 +1,5 @@
 .contacts {
-  @include centerblock;
   @include wrapper;
-  width: 320px;
   background-color: $white;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -38,14 +36,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts {
-    width: $tablet-width;
-
-    &__wrapper {
-      @include tablet-desktop-padding;
-    }
-  }
-
   .contacts__tittle {
     @include textsize(43px, 50px);
     display: block;
@@ -70,10 +60,8 @@
   }
 }
 
-@media (min-width: $desktop-change-width) {
+@media (min-width: $desktop-width) {
   .contacts {
-    width: $desktop-width;
-
     &__wrapper {
       position: relative;
       padding-top: 35px;

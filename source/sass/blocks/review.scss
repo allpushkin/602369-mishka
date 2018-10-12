@@ -1,9 +1,10 @@
 .review {
-  @include centerblock;
   @include wrapper;
-  padding: 1px 30px;
-  width: 320px;
   background-color: $white;
+
+  &__wrapper {
+    padding: 1px 30px;
+  }
 }
 
 .review__tittle {
@@ -48,15 +49,12 @@
 
 @media (min-width: $tablet-width) {
   .review {
-    width: $tablet-width;
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: left top;
-
     &__wrapper {
-      @include tablet-desktop-padding;
       @include flex;
       flex-wrap: wrap;
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: left top;
     }
 
     .review__tittle {
@@ -92,10 +90,8 @@
   }
 }
 
-@media (min-width: $desktop-change-width) {
+@media (min-width: $desktop-width) {
   .review {
-    width: $desktop-width;
-
     &__wrapper {
       padding-left: 275px;
     }
