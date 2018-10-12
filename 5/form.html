@@ -42,9 +42,11 @@
       <section class="form-block">
         <div class="form-block__wrapper">
           <form>
-            <p class="form-block__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+            <div class="form-block__text-block">
+              <p class="form-block__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+            </div>
             <fieldset class="radiobutton">
-              <div class="radiobutton__flex-box">
+              <div class="radiobutton__wrapper">
                 <legend class="radiobutton__tittle">Тип</legend>
                 <div class="radiobutton__container">
                   <label class="radiobutton__block">
@@ -59,7 +61,7 @@
               </div>
             </fieldset>
             <fieldset class="checkbox">
-              <div class="checkbox__flex-box">
+              <div class="checkbox__wrapper">
                 <legend class="checkbox__tittle">Цвет</legend>
                 <div class="checkbox__container">
                   <label class="checkbox__block">
@@ -90,7 +92,7 @@
               </div>
             </fieldset>
             <fieldset class="text-field">
-              <div class="text-field__flex-box">
+              <div class="text-field__wrapper">
                 <legend class="text-field__tittle">ФИО</legend>
                 <div class="">
                   <label class="text-field__block">
@@ -109,7 +111,7 @@
               </div>
             </fieldset>
             <fieldset class="text-field">
-              <div class="text-field__flex-box">
+              <div class="text-field__wrapper">
               <legend class="text-field__tittle">тел</legend>
                 <label class="text-field__block">
                   <input type="text" name="phonenumber" id="text-phonenumber" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="text-field__field text-field__field--phone">
@@ -117,7 +119,7 @@
               </div>
             </fieldset>
             <fieldset class="text-field">
-              <div class="text-field__flex-box">
+              <div class="text-field__wrapper">
                 <legend class="text-field__tittle text-field__tittle--email">E-mail</legend>
                 <label class="text-field__block">
                   <input type="text" name="email" id="text-email" placeholder="Ваш Email*" class="text-field__field text-field__field--e-mail">
@@ -125,15 +127,15 @@
               </div>
             </fieldset>
             <fieldset class="text-area">
-              <div class="text-area__flex-block">
+              <div class="text-area__wrapper">
                 <legend class="text-area__tittle">Доп</legend>
                 <textarea name="comment" id="comment-field" rows="10" class="text-area__field">Опишите все ваши пожелания к заказу</textarea>
+                <div class="text-area__submit-block">
+                  <small class="text-area__comment"><sup>*</sup>Поля обязательны для заполнения</small>
+                  <button type="submit" class="text-area__button button">Отправить заказ</button>
+                </div>
               </div>
             </fieldset>
-            <div class="form-block__submit-block">
-              <small class="form-block__comment"><sup>*</sup>Поля обязательны для заполнения</small>
-              <button type="submit" class="form-block__button button">Отправить заказ</button>
-            </div>
           </form>
         </div>
       </section>
