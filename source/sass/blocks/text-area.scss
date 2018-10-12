@@ -1,7 +1,6 @@
 .text-area {
   @include wrapper;
   border: none;
-  margin-bottom: 20px;
 }
 
 .text-area__tittle {
@@ -37,10 +36,28 @@
   border: 2px solid $black;
 }
 
+.text-area__submit-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.text-area__comment {
+  @include textsize(14px, 16px);
+  display: block;
+  font-weight: normal;
+  color: $dark-grey;
+  margin-bottom: 30px;
+}
+
+.text-area__button {
+  font-weight: bold;
+}
+
 @media (min-width: $tablet-width) {
   .text-area {
     &__wrapper {
       @include flex;
+      flex-wrap: wrap;
       align-items: flex-start;
     }
   }
@@ -49,7 +66,7 @@
     display: block;
 
     @include reset-position;
-    width: 160px;
+    width: 125px;
     margin-right: 7px;
 
     &::after {
@@ -60,6 +77,30 @@
   .text-area__field {
     @include textsize(19px, 18px);
     width: 501px;
+    margin-bottom: 50px;
+  }
+
+  .text-area__submit-block {
+    @include flex;
+    padding: 0;
+    width: 633px;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .text-area__comment {
+    @include textsize(17px, 30px);
+    text-align: left;
+    padding-top: 15px;
+  }
+
+  .text-area__button {
+    @include textsize(17px, 16px);
+    padding: 0;
+    width: 230px;
+    height: 52px;
+    margin-right: 100px;
   }
 }
 
@@ -72,5 +113,22 @@
 
   .text-area__field {
     width: 700px;
+  }
+
+  .text-area__submit-block {
+    width: 875px;
+    padding: 0;
+    padding-left: 175px;
+  }
+
+  .text-area__button {
+    @include textsize(17px, 16px);
+    width: 240px;
+    height: 52px;
+    margin-right: 30px;
+  }
+
+  .text-area__comment {
+    text-align: right;
   }
 }

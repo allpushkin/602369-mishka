@@ -20,27 +20,6 @@
   margin-bottom: 50px;
 }
 
-.form-block__submit-block {
-  @include centerblock;
-  width: $mobile-width;
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-bottom: 30px;
-}
-
-.form-block__comment {
-  @include textsize(14px, 16px);
-  display: block;
-  font-weight: normal;
-  color: $dark-grey;
-  margin-bottom: 30px;
-}
-
-.form-block__button {
-  font-weight: bold;
-}
-
 @media (min-width: $tablet-width) {
   .form-block {
     padding-top: 50px;
@@ -58,26 +37,6 @@
     width: 668px;
     margin: 0 50px;
   }
-
-  .form-block__submit-block {
-    @include tablet-desktop-padding;
-    @include flex;
-    width: $tablet-width;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-
-  .form-block__comment {
-    @include textsize(17px, 30px);
-    padding-top: 15px;
-  }
-
-  .form-block__button {
-    @include textsize(17px, 16px);
-    width: 240px;
-    height: 52px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -90,23 +49,5 @@
     margin: 0 175px;
     padding: 0;
     padding-left: 50px;
-  }
-
-  .form-block__submit-block {
-    @include flex;
-    justify-content: space-between;
-    width: 700px;
-    margin: 0 300px;
-    padding: 0;
-  }
-
-  .form-block__button {
-    @include textsize(17px, 16px);
-    width: 240px;
-    height: 52px;
-  }
-
-  .form-block__comment {
-    text-align: right;
   }
 }
