@@ -1,6 +1,7 @@
 .text-area {
   @include reset-position;
   border: none;
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -35,4 +36,48 @@
   width: 260px;
   height: 142px;
   border: 2px solid $black;
+}
+
+@media (min-width: $tablet-width) {
+  .text-area {
+    @include reset-position;
+    @include tablet-desktop-padding;
+    border: none;
+    margin-bottom: 50px;
+  }
+
+  .text-area__flex-block {
+    @include flex;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .text-area__tittle {
+    display: block;
+
+    @include reset-position;
+    width: 160px;
+    margin-right: 7px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .text-area__field {
+    @include textsize(19px, 18px);
+    width: 501px;
+  }
+}
+
+@media (min-width: $desktop-change-width) {
+  .text-area__tittle {
+    width: 175px;
+    padding-left: 62px;
+    margin-right: 0;
+  }
+
+  .text-area__field {
+    width: 700px;
+  }
 }

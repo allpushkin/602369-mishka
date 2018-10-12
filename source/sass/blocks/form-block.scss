@@ -1,16 +1,24 @@
 .form-block {
   @include centerblock;
+  @include wrapper;
   width: 320px;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-top: 25px;
-  padding-bottom: 55px;
   background-color: $white;
+
+  &__wrapper {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 55px;
+  }
 }
 
 .form-block__text {
   @include textsize(13px, 24px);
+  @include reset-position;
+  display: block;
   font-weight: normal;
+  margin-right: 30px;
+  margin-left: 30px;
   margin-bottom: 50px;
 }
 
@@ -24,4 +32,71 @@
 
 .form-block__button {
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .form-block {
+    width: $tablet-width;
+
+    &__wrapper {
+      padding: 0;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .form-block__text {
+    @include textsize(17px, 30px);
+    width: 668px;
+    margin: 0 50px;
+  }
+
+  .form-block__submit-block {
+    @include tablet-desktop-padding;
+    @include flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .form-block__comment {
+    @include textsize(17px, 30px);
+    padding-top: 15px;
+  }
+
+  .form-block__button {
+    @include textsize(17px, 16px);
+    width: 240px;
+    height: 52px;
+  }
+}
+
+@media (min-width: $desktop-change-width) {
+  .form-block {
+    width: $desktop-width;
+  }
+
+  .form-block__text {
+    width: 730px;
+    margin: 0 175px;
+    padding: 0;
+    padding-left: 50px;
+  }
+
+  .form-block__submit-block {
+    width: 750px;
+    margin: 0 175px;
+    padding: 0;
+    padding-left: 50px;
+  }
+
+  .form-block__button {
+    @include textsize(17px, 16px);
+    width: 240px;
+    height: 52px;
+  }
+
+  .form-block__comment {
+    text-align: right;
+  }
 }

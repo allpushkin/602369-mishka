@@ -2,6 +2,8 @@
   @include reset-position;
   border: none;
   margin-bottom: 20px;
+  padding-left: 30px;
+  background-color: $white;
 }
 
 .text-field__tittle {
@@ -26,6 +28,12 @@
     height: 1px;
     background-color: $green;
   }
+
+  &--email {
+    &::after {
+      width: 179px;
+    }
+  }
 }
 
 .text-field__block {
@@ -44,4 +52,81 @@
   width: 260px;
   height: 52px;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .text-field {
+    @include tablet-desktop-padding;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .text-field__flex-box {
+    @include flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .text-field__tittle {
+    width: 160px;
+    margin-right: 7px;
+    margin-top: 20px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .text-field__block {
+    border-bottom: none;
+  }
+
+  .text-field__text {
+    @include textsize(19px,18px);
+    margin-right: 20px;
+  }
+
+  .text-field__field {
+    @include textsize(19px, 18px);
+    border-bottom: 2px solid $black;
+    width: 375px;
+
+    &--name {
+      width: 428px;
+    }
+
+    &--phone {
+      width: 501px;
+    }
+
+    &--e-mail {
+      width: 501px;
+    }
+  }
+}
+
+@media (min-width: $desktop-change-width) {
+  .text-field__tittle {
+    width: 175px;
+    margin-right: 0;
+    padding-left: 62px;
+  }
+
+  .text-field__field {
+    width: 573px;
+
+    &--name {
+      width: 626px;
+    }
+
+    &--phone {
+      width: 700px;
+    }
+
+    &--e-mail {
+      width: 700px;
+    }
+  }
 }
