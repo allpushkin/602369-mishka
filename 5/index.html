@@ -9,7 +9,7 @@
 </head>
   <body>
     <header class="header">
-      <div class="header--wrapper">
+      <div class="header__wrapper">
         <button type="button" class="header__button"><span class="visually-hidden">Закрыть</span></button>
         <nav class="header__menu">
           <ul class="header__menu-list">
@@ -21,7 +21,7 @@
             <li class="header__list-item header__list-item--catalog"><a href="catalog.html" class="header__list-link header__list-link--catalog">Каталог товаров</a></li>
             <li class="header__list-item header__list-item--order"><a href="form.html" class="header__list-link header__list-link--order">Вязание на заказ</a></li>
             <li class="header__list-item header__list-item--search"><a href="#" class="header__list-link header__list-link--search">
-              <img src="../img/icon-search.svg" width="18px" height="18px">
+              <img src="../img/icon-search.svg">
               Поиск по сайту</a></li>
             <li class="header__list-item header__list-item--basket"><a href="#" class="header__list-link header__list-link--basket">
               <img src="../img/icon-search.svg">
@@ -36,12 +36,12 @@
     <main class="main">
       <h1 class="visually-hidden">Магазин по продаже предметов интерьера и игрушек Мишка</h1>
       <section class="info">
-        <div class="info--wrapper">
+        <div class="info info--wrapper">
           <h2 class="info__tittle">Милые штуки ручной работы для дома</h2>
         </div>
       </section>
       <section class="product-group">
-        <div class="product-group--wrapper">
+        <div class="product-group__wrapper">
           <div class="product-group__item">
             <a href="#" class="product-group__link">Предметы интерьера</a>
             <img src="img/icon-interior.svg" width="40px" height="62px" alt="Иконка лампа" class="product-group__image product-group__image--lamp">
@@ -54,7 +54,7 @@
       </section>
       <!-- Товары недели -->
       <section class="weekly-item">
-        <div class="weekly-item--wrapper">
+        <div class="weekly-item__wrapper">
           <div class="weekly-item__tittle-block">
             <h2 class="weekly-item__tittle">Вязаные корзинки</h2>
             <small class="weekly-item__tittle-info">Товар недели</small>
@@ -84,7 +84,7 @@
       </section>
         <!-- О нас -->
       <section class="pluses">
-        <div class="pluses--wrapper">
+        <div class="pluses__wrapper">
           <h2 class="pluses__tittle">Коротко о нас:</h2>
           <ul class="pluses__list">
             <li class="pluses__item pluses__item--eco">
@@ -110,7 +110,7 @@
       </section>
         <!-- Reviews/Отзывы -->
       <section class="review">
-        <div class="review--wrapper">
+        <div class="review__wrapper">
           <h2 class="review__tittle">Отзывы</h2>
           <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <div class="review__author-block">
@@ -125,7 +125,7 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts--wrapper">
+        <div class="contacts__wrapper">
           <h2 class="contacts__tittle">Контакты</h2>
           <table class="contacts__table">
             <tr class="contacts__table-list">
@@ -144,22 +144,24 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer--wrapper">
+      <div class="footer__wrapper">
         <div class="footer__logo">
-          <img src="../img/logo-mobile.svg" class="footer__logo-image" alt="Логотип Мишка">
+          <a href="index.html">
+            <img src="../img/logo-mobile.svg" class="footer__logo-image" alt="Логотип Мишка">
+          </a>
         </div>
         <div class="footer__social">
           <ul class="footer__social-list">
             <li class="footer__buttons footer__buttons--instagram">
               <a href="#">
                 <span class="visually-hidden">Instagram</span>
-                <img src="../img/icon-insta.svg" width="22px" height="22px">
+                <img src="../img/icon-insta.svg">
               </a>
             </li>
             <li class="footer__buttons footer__buttons--facebook">
               <a href="#">
                 <span class="visually-hidden">Facebook</span>
-                <img src="../img/icon-fb.svg" width="22px" height="22px">
+                <img src="../img/icon-fb.svg">
               </a>
             </li>
             <li class="footer__buttons footer__buttons--Twitter">
@@ -180,7 +182,7 @@
     </footer>
       <!-- модальное окно -->
     <section class="modal">
-      <div class="modal--wrapper">
+      <div class="modal__wrapper">
         <form class="modal__form">
           <h2 class="modal__tittle">Добавить в корзину</h2>
           <label class="modal__text">Выберите размер:</label>
