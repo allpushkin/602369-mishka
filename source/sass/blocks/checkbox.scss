@@ -1,15 +1,12 @@
 .checkbox {
-  @include reset-position;
+  @include wrapper;
   border: none;
   margin-bottom: 20px;
 }
 
 .checkbox__tittle {
   @include textsize(17px, 16px);
-  @include flex;
   width: 260px;
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
   text-align: left;
   color: $green;
   text-transform: uppercase;
@@ -40,4 +37,60 @@
   display: block;
   margin-right: 50px;
   margin-left: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox {
+    background-color: $block-grey;
+
+    &__wrapper {
+      @include flex;
+      align-items: flex-start;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .checkbox__tittle {
+    @include reset-position;
+    width: 160px;
+    text-align: left;
+    margin-right: 7px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .checkbox__container {
+    @include textsize(19px, 18px);
+    @include flex;
+    flex-wrap: wrap;
+    width: 480px;
+  }
+
+  .checkbox__text {
+    @include textsize(19px, 18px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkbox__tittle {
+    width: 175px;
+    padding-left: 62px;
+    margin-right: 0;
+  }
+
+  .checkbox__container {
+    width: 680px;
+  }
+
+  .checkbox__block-list {
+    @include flex;
+    flex-wrap: wrap;
+  }
+
+  .checkbox__text {
+    @include textsize(19px, 18px);
+  }
 }

@@ -1,13 +1,15 @@
 .footer {
-  @include centerblock;
+  @include wrapper;
   background-color: $block-grey;
-  width: 320px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 30px;
+}
+
+.footer__logo {
+  display: none;
 }
 
 .footer__social {
-  width: 260px;
+  width: 256px;
   display: block;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -25,7 +27,7 @@
 
 .footer__copyright {
   @include textsize(19px, 18px);
-  width: 260px;
+  width: 256px;
   padding-left: 39px;
   padding-right: 39px;
   padding-top: 22px;
@@ -42,4 +44,22 @@
 
 .footer__copyright-image {
   margin-left: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    &__wrapper {
+      @include flex;
+      justify-content: space-around;
+    }
+  }
+
+  .footer__logo {
+    display: block;
+    width: 256px;
+  }
+
+  .footer__copyright {
+    border: none;
+  }
 }

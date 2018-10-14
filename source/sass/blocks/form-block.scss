@@ -1,27 +1,53 @@
 .form-block {
+  width: 100%;
+  background-color: $white;
+}
+
+.form-block__text-block {
   @include centerblock;
-  width: 320px;
+  width: $mobile-width;
+  padding-top: 30px;
   padding-right: 30px;
   padding-left: 30px;
-  padding-top: 25px;
-  padding-bottom: 55px;
-  background-color: $white;
+  padding-bottom: 30px;
 }
 
 .form-block__text {
   @include textsize(13px, 24px);
+  @include reset-position;
+  display: block;
   font-weight: normal;
   margin-bottom: 50px;
 }
 
-.form-block__comment {
-  @include textsize(14px, 16px);
-  display: block;
-  font-weight: normal;
-  color: $dark-grey;
-  margin-bottom: 30px;
+@media (min-width: $tablet-width) {
+  .form-block {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .form-block__text-block {
+    width: $tablet-width;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .form-block__text {
+    @include textsize(17px, 30px);
+    width: 668px;
+    margin: 0 50px;
+  }
 }
 
-.form-block__button {
-  font-weight: bold;
+@media (min-width: $desktop-width) {
+  .form-block__text-block {
+    width: $desktop-width;
+  }
+
+  .form-block__text {
+    width: 730px;
+    margin: 0 175px;
+    padding: 0;
+    padding-left: 50px;
+  }
 }

@@ -1,6 +1,20 @@
 .product {
-  @include centerblock;
-  width: 320px;
-  padding: 30px;
+  @include wrapper;
   background-color: $white;
+
+  &__wrapper {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    &__wrapper {
+      @include flex;
+      justify-content: space-around;
+    }
+  }
 }

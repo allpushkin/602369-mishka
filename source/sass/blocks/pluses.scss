@@ -1,13 +1,16 @@
 .pluses {
-  @include centerblock;
-  width: 320px;
-  padding: 30px;
+  @include wrapper;
   background-color: #ffffff;
+
+  &__wrapper {
+    padding: 30px;
+  }
 }
 
 .pluses__tittle {
   @include textsize(25px, 30px);
   text-align: left;
+  display: block;
   margin-bottom: 30px;
 }
 
@@ -45,4 +48,61 @@
 .pluses__image {
   margin-right: 200px;
   margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .pluses__tittle {
+    @include textsize(53px, 57px);
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .pluses__list {
+    @include flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .pluses__item {
+    @include reset-position;
+    @include textsize(20px, 22px);
+    display: block;
+    width: 250px;
+    margin-bottom: 55px;
+
+    &--eco {
+      order: 0;
+    }
+
+    &--style {
+      order: 2;
+    }
+
+    &--likes {
+      order: 4;
+    }
+
+    &--make {
+      order: 1;
+    }
+
+    &--production {
+      order: 3;
+    }
+
+    &--gift {
+      order: 5;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pluses {
+    &__wrapper {
+      padding-top: 85px;
+      padding-left: 175px;
+      padding-bottom: 85px;
+      padding-right: 360px;
+    }
+  }
 }

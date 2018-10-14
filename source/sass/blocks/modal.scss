@@ -33,3 +33,27 @@
   list-style: none;
   margin-bottom: 31px;
 }
+
+.modal__button {
+  @include textsize(17px, 16px);
+  color: $white;
+  font: inherit;
+  background-color: $green;
+  border-color: $green;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: $modal-width;
+    padding: 0;
+    padding-left: 109px;
+  }
+
+  .modal__tittle {
+    @include textsize(30px, 57px);
+  }
+
+  .modal__text {
+    @include textsize(17px, 30px);
+  }
+}
