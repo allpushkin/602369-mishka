@@ -3,27 +3,34 @@
   background-color: $white;
 
   &__wrapper {
-    padding: 1px 30px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-left: 28px;
+    padding-bottom: 40px;
   }
 }
 
 .review__tittle {
+  @include reset-position;
   @include textsize(25px, 30px);
-  margin-bottom: 35px;
+  margin-bottom: 24px;
 }
 
 .review__text {
+  @include reset-position;
   @include textsize(15px, 30px);
   font-weight: normal;
-  margin-bottom: 30px;
+  padding-left: 2px;
+  margin-bottom: 27px;
 }
 
 .review__author-block {
   margin-bottom: 30px;
+  padding-left: 2px;
 }
 
 .review__author {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   font-style: normal;
 }
 
@@ -38,7 +45,8 @@
   width: 260px;
   height: 52px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-left: 2px;
+  margin-bottom: 37px;
   padding: 0;
   background-color: #ffffff;
   border: 1px solid #ececec;
@@ -51,6 +59,7 @@
   background-color: $white;
   border: none;
   box-shadow: none;
+  padding-right: 4px;
   width: 50%;
 
   &--after {
@@ -58,6 +67,11 @@
   }
 }
 
+.review__button {
+  padding-top: 13px;
+  padding-bottom: 15px;
+  margin-left: 2px;
+}
 
 @media (min-width: $tablet-width) {
   .review {

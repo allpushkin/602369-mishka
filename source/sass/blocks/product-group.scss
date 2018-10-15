@@ -9,20 +9,23 @@
   @include centerblock;
   background-color: $green;
   width: $mobile-width;
-  padding-top: 24px;
+  padding-top: 23px;
   padding-right: 30px;
-  padding-left: 30px;
-  padding-bottom: 19px;
+  padding-left: 28px;
+  padding-bottom: 18px;
 
   &--dark-green {
     background-color: $dark-green;
+    padding-top: 21px;
+    padding-left: 29px;
+    padding-right: 10px;
+    padding-bottom: 22px;
   }
 }
 
 .product-group__link {
   @include flex;
   @include textsize(19px, 24px);
-  justify-content: flex-start;
   width: 100%;
   color: $white;
 }
@@ -30,14 +33,25 @@
 .product-group__link-text {
   display: block;
   width: 130px;
+  padding-bottom: 10px;
   margin-right: 85px;
   text-align: left;
+
+  &--toy {
+    margin-right: 74px;
+    padding-bottom: 5px;
+  }
 }
 
 .product-group__image {
   opacity: 0.3;
-  width: 60px;
-  height: 60px;
+  width: 41px;
+  height: 62px;
+
+  &--toy {
+    height: 60px;
+    width: 60px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -51,15 +65,31 @@
 
   .product-group__item {
     width: 50%;
-    padding-top: 30px;
+    padding-top: 28px;
     padding-right: 36px;
     padding-left: 36px;
-    padding-bottom: 30px;
+    padding-bottom: 41px;
+
+    &--dark-green {
+      padding-top: 28px;
+      padding-right: 28px;
+      padding-left: 36px;
+      padding-bottom: 38px;
+    }
   }
 
   .product-group__link {
     @include textsize(20px, 30px);
-    margin-right: 110px;
+  }
+
+  .product-group__link-text {
+    margin-right: 95px;
+    padding-bottom: 5px;
+
+    &--toy {
+      margin-right: 74px;
+      padding-bottom: 8px;
+    }
   }
 }
 
@@ -67,6 +97,8 @@
   .product-group {
     &__wrapper {
       width: $desktop-width;
+      padding-right: 100px;
+      padding-left: 100px;
     }
   }
 
@@ -77,7 +109,7 @@
     padding-bottom: 30px;
   }
 
-  .product-group__link {
+  .product-group__link-text {
     margin-right: 299px;
   }
 }

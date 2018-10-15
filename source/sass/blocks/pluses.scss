@@ -3,7 +3,10 @@
   background-color: #ffffff;
 
   &__wrapper {
-    padding: 30px;
+    padding-top: 18px;
+    padding-right: 30px;
+    padding-left: 28px;
+    padding-bottom: 30px;
   }
 }
 
@@ -11,7 +14,7 @@
   @include textsize(25px, 30px);
   text-align: left;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .pluses__list {
@@ -22,7 +25,8 @@
 
 .pluses__item {
   @include textsize(17px, 20px);
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
 
   &--eco {
     margin-right: 80px;
@@ -38,10 +42,16 @@
 
   &--make {
     margin-right: 30px;
+    padding-left: 1px;
+  }
+
+  &--production {
+    padding-left: 2px;
   }
 
   &--gift {
     margin-right: 50px;
+    padding-left: 2px;
   }
 }
 
@@ -51,6 +61,47 @@
 
   path {
     fill: $green;
+  }
+
+  &--eco {
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-bottom: 13px;
+  }
+
+  &--style {
+    margin-top: 0;
+    margin-right: 20px;
+    margin-left: 2px;
+    margin-bottom: 22px;
+  }
+
+  &--likes {
+    margin-top: 5px;
+    margin-right: 40px;
+    margin-left: 9px;
+    margin-bottom: 16px;
+  }
+
+  &--make {
+    margin-top: 2px;
+    margin-right: 135px;
+    margin-left: 4px;
+    margin-bottom: 12px;
+  }
+
+  &--production {
+    margin-top: 3px;
+    margin-right: 120px;
+    margin-left: -6px;
+    margin-bottom: 23px;
+  }
+
+  &--gift {
+    margin-top: 1px;
+    margin-right: 50px;
+    margin-left: 3px;
+    margin-bottom: 16px;
   }
 }
 

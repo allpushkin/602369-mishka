@@ -27,13 +27,14 @@
   .info {
     border-top: 1px solid $light-grey;
     background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: top 0 center;
 
     &--wrapper {
-      margin-top: -55px;
-      padding-top: 163px;
+      margin-top: -53px;
+      padding-top: 153px;
       padding-right: 50px;
-      padding-left: 50px;
-      padding-bottom: 295px;
+      padding-left: 48px;
+      padding-bottom: 373px;
     }
   }
 
