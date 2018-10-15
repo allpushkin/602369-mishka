@@ -48,6 +48,10 @@
 .pluses__image {
   margin-right: 200px;
   margin-bottom: 15px;
+
+  path {
+    fill: $green;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -67,7 +71,7 @@
     @include reset-position;
     @include textsize(20px, 22px);
     display: block;
-    width: 250px;
+    width: 300px;
     margin-bottom: 55px;
 
     &--eco {

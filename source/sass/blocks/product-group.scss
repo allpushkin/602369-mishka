@@ -9,10 +9,10 @@
   @include centerblock;
   background-color: $green;
   width: $mobile-width;
-  padding-top: 25px;
+  padding-top: 24px;
   padding-right: 30px;
   padding-left: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 19px;
 
   &--dark-green {
     background-color: $dark-green;
@@ -20,11 +20,18 @@
 }
 
 .product-group__link {
+  @include flex;
   @include textsize(19px, 24px);
+  justify-content: flex-start;
+  width: 100%;
+  color: $white;
+}
+
+.product-group__link-text {
   display: block;
   width: 130px;
-  color: $white;
-  margin-right: 83px;
+  margin-right: 85px;
+  text-align: left;
 }
 
 .product-group__image {
