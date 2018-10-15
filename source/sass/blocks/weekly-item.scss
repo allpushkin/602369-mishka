@@ -25,19 +25,34 @@
   font-weight: normal;
 }
 
+.weekly-item__table-block {
+  width: 260px;
+}
+
 .weekly-item__table {
   @include textsize(15px, 24px);
   text-align: left;
   font-weight: normal;
   display: block;
-  width: 260px;
+  width: 100%;
   margin-bottom: 28px;
   border-collapse: collapse;
 }
 
-.weekly-item__table-list {
+.weekly-item__table-item {
   border-bottom: 1px solid #ececec;
+  padding: 10px 0;
+
+  &:first-child {
+    width: 30%;
+    padding-right: 30px;
+  }
+
+  &:nth-child(2) {
+    width: 70%;
+  }
 }
+
 
 .weekly-item__price {
   display: block;
@@ -51,6 +66,7 @@
   .weekly-item {
     &__wrapper {
       @include flex;
+      @include tablet-desktop-padding;
       position: relative;
       flex-direction: column;
       align-items: flex-start;
@@ -59,7 +75,7 @@
 
   .weekly-item__tittle-block {
     @include flex;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
 
   .weekly-item__tittle {
@@ -77,7 +93,7 @@
   }
 
   .weekly-item__table-block {
-    width: 291px;
+    width: 300px;
   }
 
   .weekly-item__text {
@@ -114,7 +130,12 @@
   }
 
   .weekly-item__table-block {
+    width: 291px;
     margin-bottom: 110px;
+  }
+
+  .weekly-item__text {
+    margin-bottom: 60px;
   }
 
   .weekly-item__price-block {
