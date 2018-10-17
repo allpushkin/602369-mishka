@@ -163,6 +163,9 @@
 @media (min-width: $desktop-width) {
   .weekly-item {
     &__wrapper {
+      padding-top: 107px;
+      padding-left: 133px;
+
       &::after {
         bottom: -5px;
         left: 0;
@@ -178,31 +181,39 @@
   .weekly-item__tittle {
     @include textsize(53px, 57px);
     margin-right: 0;
-    margin-left: 59px;
+    margin-left: 40px;
     text-wrap: none;
     width: 600px;
+    z-index: 100;
   }
 
   .weekly-item__table-block,
   .weekly-item__price-block {
-    margin-left: 175px;
+    margin-left: 141px;
   }
 
   .weekly-item__table-block {
     width: 291px;
-    margin-bottom: 110px;
+    margin-bottom: 64px;
   }
 
   .weekly-item__text {
-    margin-bottom: 60px;
+    margin-bottom: 48px;
+  }
+
+  .weekly-item__image {
+    display: block;
+    width: 525px;
+    height: 636px;
   }
 
   .weekly-item__price-block {
     @include textsize(20px, 24px);
+    margin-left: 143px;
   }
 
   .weekly-item__price {
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
 
   .weekly-item__button {

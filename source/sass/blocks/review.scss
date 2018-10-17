@@ -162,27 +162,39 @@
 
 @media (min-width: $desktop-width) {
   .review {
-    padding: 0 100px;
-
     &__wrapper {
-      padding-left: 175px;
+      padding-top: 70px;
+      padding-left: 272px;
+      background-position: top left 101px;
+
+      &::after {
+        width: $desktop-width;
+      }
     }
 
     .review__tittle {
       @include textsize(53px, 57px);
+      width: 500px;
     }
 
     .review__text {
       width: 800px;
       padding-right: 30px;
+      margin-bottom: 7px;
     }
 
     .review__author-block {
       order: 3;
+      margin-right: 208px;
     }
 
     .review__author {
       @include textsize(17px, 24px);
+    }
+
+    .review__button {
+      margin-top: 7px;
+      margin-left: 120px;
     }
   }
 }

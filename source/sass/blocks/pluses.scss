@@ -204,10 +204,54 @@
 @media (min-width: $desktop-width) {
   .pluses {
     &__wrapper {
-      padding-top: 85px;
-      padding-left: 175px;
-      padding-bottom: 85px;
+      padding-top: 87px;
+      padding-left: 272px;
+      padding-bottom: 33px;
       padding-right: 360px;
+    }
+  }
+
+  .pluses__tittle {
+    @include textsize(53px, 57px);
+    margin-bottom: 47px;
+  }
+
+  .pluses__list {
+    width: 700px;
+  }
+
+  .pluses__item {
+    width: 255px;
+    margin-bottom: 57px;
+
+    &--eco {
+      order: 0;
+      padding-right: 25px;
+      margin-right: 95px;
+    }
+
+    &--style {
+      order: 2;
+      margin-right: 96px;
+    }
+
+    &--likes {
+      order: 4;
+      padding-right: 20px;
+      margin-right: 95px;
+    }
+
+    &--make {
+      order: 1;
+    }
+
+    &--production {
+      width: 300px;
+      order: 3;
+    }
+
+    &--gift {
+      order: 5;
     }
   }
 }
