@@ -85,6 +85,18 @@
       padding-top: 30px;
       padding-left: 48px;
       padding-bottom: 68px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 768px;
+        height: 34px;
+        background-image: url("../img/bg-zigzag-line.svg");
+        background-position: bottom center;
+        background-repeat: no-repeat;
+      }
     }
   }
 
@@ -131,8 +143,8 @@
 
   .weekly-item__image {
     position: absolute;
-    bottom: 30px;
-    right: 50px;
+    top: 137px;
+    right: 51px;
   }
 
   .weekly-item__price {
@@ -149,6 +161,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .weekly-item {
+    &__wrapper {
+      &::after {
+        bottom: -5px;
+        left: 0;
+        width: 1150px;
+      }
+    }
+  }
+
   .weekly-item__tittle-block {
     flex-direction: row-reverse;
   }

@@ -106,35 +106,48 @@
 }
 
 @media (min-width: $tablet-width) {
+  .pluses__wrapper {
+    padding-top: 50px;
+    padding-bottom: 26px;
+    padding-left: 46px;
+    padding-right: 50px;
+  }
+
   .pluses__tittle {
-    @include textsize(53px, 57px);
+    @include reset-position;
+    @include textsize(43px, 50px);
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 47px;
   }
 
   .pluses__list {
     @include flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    padding-left: 4px;
   }
 
   .pluses__item {
     @include reset-position;
     @include textsize(20px, 22px);
     display: block;
-    width: 300px;
-    margin-bottom: 55px;
+    width: 255px;
+    margin-bottom: 57px;
 
     &--eco {
       order: 0;
+      padding-right: 25px;
+      margin-right: 79px;
     }
 
     &--style {
       order: 2;
+      margin-right: 79px;
     }
 
     &--likes {
       order: 4;
+      padding-right: 20px;
+      margin-right: 79px;
     }
 
     &--make {
@@ -142,11 +155,48 @@
     }
 
     &--production {
+      width: 300px;
       order: 3;
     }
 
     &--gift {
       order: 5;
+    }
+  }
+
+  .pluses__image {
+    &--eco {
+      margin-left: 9px;
+    }
+
+    &--style {
+      margin-right: 80px;
+      margin-left: 1px;
+      margin-bottom: 21px;
+    }
+
+    &--likes {
+      margin-top: 7px;
+      margin-right: 75px;
+      margin-left: 8px;
+      margin-bottom: 16px;
+    }
+
+    &--make {
+      margin-top: 5px;
+      margin-bottom: 13px;
+    }
+
+    &--production {
+      margin-top: 4px;
+      margin-right: 130px;
+      margin-bottom: 22px;
+    }
+
+    &--gift {
+      margin-top: 2px;
+      margin-right: 80px;
+      margin-bottom: 15px;
     }
   }
 }

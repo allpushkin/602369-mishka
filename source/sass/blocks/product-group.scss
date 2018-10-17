@@ -60,6 +60,19 @@
       @include tablet-desktop-padding;
       @include flex;
       width: $tablet-width;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 768px;
+        height: 34px;
+        background-image: url("../img/bg-zigzag-fill.svg");
+        background-position: bottom center;
+        background-repeat: no-repeat;
+      }
     }
   }
 
@@ -99,6 +112,12 @@
       width: $desktop-width;
       padding-right: 100px;
       padding-left: 100px;
+
+      &::after {
+        bottom: -5px;
+        left: 0;
+        width: 1150px;
+      }
     }
   }
 

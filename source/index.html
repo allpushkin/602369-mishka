@@ -88,7 +88,13 @@
               </tr>
             </table>
           </div>
-          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" class="weekly-item__image">
+          <div class="weekly-item__image">
+            <picture>
+              <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+              <img src="img/triple-set-mobile@1x.jpg" alt="Пример">
+            </picture>
+          </div>
           <div class="weekly-item__price-block">
             <span class="weekly-item__price">Цена: 990 руб.</span>
             <a href="#" class="button weekly-item__button">Заказать</a>
@@ -217,7 +223,7 @@
                 <img src="../img/icon-fb.svg">
               </a>
             </li>
-            <li class="footer__buttons footer__buttons--Twitter">
+            <li class="footer__buttons footer__buttons--twitter">
               <a href="#">
                 <span class="visually-hidden">Twitter</span>
                 <img src="../img/icon-twitter.svg" width="22px" height="22px">
