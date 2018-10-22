@@ -1,29 +1,29 @@
 .text-field {
   @include wrapper;
   border: none;
-  margin-bottom: 20px;
+  padding-bottom: 26px;
   background-color: $white;
 }
 
 .text-field__tittle {
   @include textsize(17px, 16px);
   @include flex;
-  width: 260px;
   flex-direction: row-reverse;
   flex-wrap: nowrap;
   text-align: left;
   color: $green;
   text-transform: uppercase;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
+  padding-left: 14px;
 
   &::after {
     content: "";
     display: block;
     position: absolute;
-    top: 50%;
-    right: 0;
-    width: 198px;
+    top: 8px;
+    right: 45px;
+    width: 199px;
     height: 1px;
     background-color: $green;
   }
@@ -37,37 +37,44 @@
 
 .text-field__block {
   display: block;
+  padding-left: 14px;
   margin-bottom: 20px;
-  border-bottom: 2px solid $black;
 }
 
 .text-field__text {
   @include textsize(17px,18px);
+  width: 260px;
+  margin-bottom: 10px;
+  margin-right: 5px;
   text-align: left;
 }
 
 .text-field__field {
   @include textsize(17px, 18px);
   width: 260px;
-  height: 52px;
+  height: 48px;
   border: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid $black;
 }
 
 @media (min-width: $tablet-width) {
   .text-field {
     &__wrapper {
       @include flex;
-      padding-top: 50px;
+      padding-top: 44px;
       padding-bottom: 50px;
+      padding-left: 37px;
       align-items: flex-start;
       justify-content: flex-start;
     }
   }
 
   .text-field__tittle {
-    width: 160px;
-    margin-right: 7px;
-    margin-top: 20px;
+    width: 154px;
+    margin-right: 0;
+    padding-top: 17px;
+    padding-left: 0;
 
     &::after {
       display: none;
@@ -76,6 +83,8 @@
 
   .text-field__block {
     border-bottom: none;
+    margin-bottom: 24px;
+    padding-left: 12px;
   }
 
   .text-field__text {
@@ -87,6 +96,8 @@
     @include textsize(19px, 18px);
     border-bottom: 2px solid $black;
     width: 375px;
+    height: 52px;
+    padding-left: 17px;
 
     &--name {
       width: 428px;

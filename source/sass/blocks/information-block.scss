@@ -30,6 +30,11 @@
   width: 260px;
   height: 150px;
   background-image: url("../img/video-mobile@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+    background-size: 260px auto;
+  }
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -69,33 +74,56 @@
 }
 
 @media (min-width: $tablet-width) {
+  .information-block__wrapper {
+    padding-top: 37px;
+    padding-right: 50px;
+    padding-left: 51px;
+    padding-bottom: 64px;
+  }
+
   .information-block__tittle {
     @include textsize(20px, 24px);
     order: 1;
     width: 668px;
     border: 1px solid $light-grey;
     border-bottom: none;
-    padding-top: 50px;
+    padding-top: 38px;
+    padding-left: 105px;
   }
 
   .information-block__image-block {
     width: 668px;
     height: 455px;
     background-image: url("../img/video-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+      background-size: 668px auto;
+    }
     order: 0;
+  }
+
+  .information-block__image {
+    padding-top: 190px;
+    padding-left: 284px;
   }
 
   .information-block__info {
     width: 668px;
     order: 2;
+    padding-top: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 45px;
   }
 
   .information-block__text {
     @include textsize(15px, 30px);
+    margin-bottom: 35px;
   }
 
   .information-block__button {
-    @include textsize(20px, 24px);
+    @include textsize(17px, 16px);
     width: 584px;
     height: 52px;
   }
@@ -107,6 +135,10 @@
       align-items: flex-end;
       flex-wrap: wrap;
       position: relative;
+      padding-top: 47px;
+      padding-right: 101px;
+      padding-left: 30px;
+      padding-bottom: 105px;
     }
   }
 
@@ -114,31 +146,47 @@
     width: 368px;
     border: 1px solid $light-grey;
     border-left: none;
-    padding-top: 10px;
+    border-bottom: none;
+    margin: 0;
+    padding-top: 95px;
+    padding-right: 50px;
+    padding-left: 79px;
     text-align: left;
   }
 
   .information-block__image-block {
     width: 682px;
     background-image: url("../img/video-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+      background-size: 682px auto;
+    }
     position: absolute;
-    top: 20px;
-    left: 50px;
+    top: 47px;
+    left: 100px;
   }
 
   .information-block__image {
-    top: 50%;
-    left: 50%;
+    padding-top: 190px;
+    padding-left: 291px;
   }
 
   .information-block__info {
     width: 368px;
-    padding-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 9px;
+    padding-left: 78px;
+    padding-bottom: 59px;
+  }
+
+  .information-block__text {
+    margin-bottom: 46px;
   }
 
   .information-block__button {
     width: 230px;
-    margin-bottom: 50px;
+    margin-left: 2px;
+    padding-top: 15px;
+    padding-left: 16px;
   }
 }
