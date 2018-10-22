@@ -104,3 +104,32 @@
     padding-left: 18px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer {
+    &__wrapper {
+      padding-left: 100px;
+    }
+  }
+
+  .footer__logo {
+    padding-left: 0;
+    margin-right: 57px;
+  }
+
+  .footer__social {
+    margin-left: 98px;
+    margin-right: 63px;
+  }
+
+  .footer__copyright {
+    margin-left: 100px;
+    margin-right: 0;
+  }
+
+  .footer__buttons {
+    &--instagram {
+      margin-right: 23px;
+    }
+  }
+}

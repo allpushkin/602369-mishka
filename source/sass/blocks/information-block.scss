@@ -5,7 +5,10 @@
   &__wrapper {
     @include flex;
     flex-direction: column;
-    padding: 30px;
+    padding-top: 11px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 58px;
   }
 }
 
@@ -13,12 +16,13 @@
   @include textsize(17px, 24px);
   @include reset-position;
   display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 60px;
-  padding-right: 12px;
+  padding-top: 23px;
+  padding-bottom: 24px;
+  padding-left: 88px;
+  padding-right: 10px;
   border: 1px solid $light-grey;
   border-bottom: none;
+  position: relative;
 }
 
 .information-block__image-block {
@@ -42,19 +46,26 @@
   width: 260px;
   border: 1px solid $light-grey;
   border-top: none;
-  padding: 33px;
+  padding-top: 27px;
+  padding-right: 33px;
+  padding-left: 33px;
+  padding-bottom: 32px;
 }
 
 .information-block__text {
   @include textsize(13px, 24px);
+  @include reset-position;
   font-weight: normal;
-  margin-bottom: 55px;
+  margin-bottom: 25px;
 }
 
 .information-block__button {
   @include textsize(17px, 16px);
   width: 192px;
-  padding: 15px 20px;
+  padding-top: 16px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 16px;
 }
 
 @media (min-width: $tablet-width) {

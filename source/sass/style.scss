@@ -1,10 +1,11 @@
 // ///////
 // GENERAL
 // ///////
+@import "../css/normalize.css";
 @import "./general/global.scss";
 @import "./general/mixins.scss";
 @import "./general/config.scss";
-// ///////////
+// ///////////npm
 // PAGE BLOCKS
 // ///////////
 @import "./blocks/header.scss";

@@ -142,6 +142,7 @@
   }
 
   .weekly-item__image {
+    max-width: 333px;
     position: absolute;
     top: 137px;
     right: 51px;
@@ -168,7 +169,7 @@
 
       &::after {
         bottom: -5px;
-        left: 0;
+        left: 100px;
         width: 1150px;
       }
     }
@@ -203,8 +204,9 @@
 
   .weekly-item__image {
     display: block;
-    width: 525px;
-    height: 636px;
+    max-width: 525px;
+    top: 55px;
+    right: 99px;
   }
 
   .weekly-item__price-block {
