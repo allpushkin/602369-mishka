@@ -1,7 +1,7 @@
 .text-field {
   @include wrapper;
   border: none;
-  padding-bottom: 26px;
+  padding-bottom: 6px;
   background-color: $white;
 }
 
@@ -29,9 +29,16 @@
   }
 
   &--email {
+    padding-left: 15px;
+    margin-bottom: 11px;
+
     &::after {
       width: 179px;
     }
+  }
+
+  &--phone {
+    margin-bottom: 11px;
   }
 }
 
@@ -39,6 +46,10 @@
   display: block;
   padding-left: 14px;
   margin-bottom: 20px;
+
+  &--phone {
+    padding-left: 16px;
+  }
 }
 
 .text-field__text {
@@ -56,6 +67,15 @@
   border: none;
   padding-bottom: 4px;
   border-bottom: 2px solid $black;
+
+  &--phone {
+    @include textsize(19px, 18px);
+    padding-bottom: 8px;
+  }
+
+  &--e-mail {
+    padding-bottom: 6px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -67,6 +87,21 @@
       padding-left: 37px;
       align-items: flex-start;
       justify-content: flex-start;
+
+      &--phone {
+        padding-top: 15px;
+        padding-bottom: 3px;
+      }
+
+      &--e-mail {
+        padding-top: 10px;
+        padding-bottom: 50px;
+      }
+    }
+
+    &--phone,
+    &--e-mail {
+      background-color: $block-grey;
     }
   }
 
@@ -85,6 +120,14 @@
     border-bottom: none;
     margin-bottom: 24px;
     padding-left: 12px;
+
+    &--phone {
+      margin-bottom: 0;
+    }
+
+    &--e-mail {
+      margin-bottom: 10px;
+    }
   }
 
   .text-field__text {
@@ -105,19 +148,44 @@
 
     &--phone {
       width: 501px;
+      background-color: $block-grey;
     }
 
     &--e-mail {
       width: 501px;
+      background-color: $block-grey;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .text-field {
+    padding-bottom: 0;
+  }
+
+  .text-field__wrapper {
+    padding-top: 45px;
+    padding-bottom: 20px;
+
+    &--phone {
+      padding-top: 49px;
+      padding-bottom: 10px;
+    }
+
+    &--e-mail {
+      padding-top: 10px;
+      padding-bottom: 36px;
+    }
+  }
+
   .text-field__tittle {
     width: 175px;
     margin-right: 0;
-    padding-left: 62px;
+    padding-left: 60px;
+  }
+
+  .text-field__block {
+    padding-left: 0;
   }
 
   .text-field__field {
