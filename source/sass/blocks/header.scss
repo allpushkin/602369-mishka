@@ -87,34 +87,37 @@
 
   .header__logo {
     width: 320px;
-    padding-top: 20px;
-    padding-bottom: 20px;
     padding-right: 159px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 0;
     border-bottom: none;
     order: 0;
   }
 
   .header__list-item {
+    display: block;
     border: none;
+    padding-top: 49px;
+    padding-bottom: 28px;
 
     &--catalog {
-      width: 170px;
+      width: 168px;
       order: 3;
-      padding-top: 15px;
+      padding-top: 17px;
+      padding-bottom: 10px;
       padding-right: 10px;
       padding-left: 0;
-      padding-bottom: 15px;
       z-index: 200;
     }
 
     &--order {
       width: 192px;
       order: 4;
-      padding-top: 15px;
+      padding-top: 17px;
+      padding-bottom: 10px;
       padding-right: 35px;
       padding-left: 0;
-      padding-bottom: 15px;
       z-index: 200;
     }
 
@@ -122,10 +125,8 @@
       margin: 0;
       width: 84px;
       order: 1;
-      padding-top: 25px;
       padding-right: 30px;
-      padding-left: 30px;
-      padding-bottom: 25px;
+      padding-left: 33px;
       border-right: 1px solid $light-grey;
       border-left: 1px solid $light-grey;
     }
@@ -133,24 +134,35 @@
     &--basket {
       @include textsize(17px, 24px);
       width: 264px;
-      padding-top: 20px;
+      padding-top: 40px;
+      padding-bottom: 31px;
       padding-right: 0;
       padding-left: 30px;
-      padding-bottom: 20px;
       order: 2;
 
       img {
         margin-right: 30px;
       }
     }
+
+    &--new {
+      display: none;
+    }
+
+    &--sale {
+      display: none;
+    }
   }
 
   .header__list-link {
+    @include textsize(15px, 24px);
+
     &--search {
       @include textsize(0, 0);
     }
 
     &--basket {
+      @include flex;
       @include textsize(17px, 24px);
     }
   }
@@ -158,7 +170,7 @@
   .header__text {
     display: block;
     position: absolute;
-    bottom: 17px;
+    bottom: 10px;
     right: 50px;
     font-weight: normal;
     z-index: 200;
@@ -168,7 +180,10 @@
 @media (min-width: $desktop-width) {
   .header__logo {
     width: 282px;
-    padding: 35px 50px;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 26px;
     order: 2;
   }
 
@@ -176,46 +191,51 @@
     border: none;
 
     &--catalog {
-      @include textsize(17px, 24px);
       width: 235px;
-      padding: 35px;
-      padding-left: 50px;
+      padding-top: 31px;
+      padding-right: 35px;
+      padding-bottom: 34px;
+      padding-left: 51px;
       order: 0;
     }
 
     &--order {
-      @include textsize(17px, 24px);
       width: 235px;
-      padding: 35px;
+      padding-top: 31px;
+      padding-right: 35px;
+      padding-left: 35px;
+      padding-bottom: 34px;
       border-left: 1px solid $light-grey;
       order: 1;
     }
 
     &--search {
       order: 3;
-      padding: 35px 30px;
+      padding-top: 36px;
+      padding-right: 30px;
+      padding-left: 32px;
+      padding-bottom: 28px;
       border-right: 1px solid $light-grey;
       border-left: 1px solid $light-grey;
     }
 
     &--basket {
       width: 265px;
-      padding-top: 35px;
+      padding-top: 29px;
       padding-right: 0;
       padding-left: 30px;
-      padding-bottom: 35px;
+      padding-bottom: 32px;
       order: 4;
     }
 
     &--new {
-      @include textsize(15px, 24px);
       display: block;
       color: $black;
       width: 235px;
-      padding-top: 20px;
+      padding-top: 17px;
       padding-right: 5px;
-      padding-left: 50px;
-      padding-bottom: 20px;
+      padding-left: 51px;
+      padding-bottom: 22px;
       order: 5;
       z-index: 200;
     }
@@ -225,17 +245,33 @@
       display: block;
       width: 235px;
       color: $black;
-      padding-top: 20px;
+      padding-top: 17px;
       padding-right: 30px;
-      padding-left: 36px;
-      padding-bottom: 20px;
+      padding-left: 35px;
+      padding-bottom: 22px;
       order: 6;
       z-index: 200;
     }
   }
 
+  .header__list-link {
+    @include textsize(17px, 24px);
+
+    &--search {
+      @include textsize(0, 0);
+    }
+
+    &--new {
+      @include textsize(15px, 24px);
+    }
+
+    &--sale {
+      @include textsize(15px, 24px);
+    }
+  }
+
   .header__text {
-    bottom: 20px;
+    bottom: 22px;
     right: 100px;
   }
 }

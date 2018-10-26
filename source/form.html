@@ -23,7 +23,7 @@
               <img src="../img/icon-search.svg">
               Поиск по сайту</a></li>
             <li class="header__list-item header__list-item--basket"><a href="#" class="header__list-link header__list-link--basket">
-              <img src="../img/icon-search.svg">
+              <img src="../img/icon-basket.png">
               Корзина: пока пуста</a></li>
             <li class="header__list-item header__list-item--new"><a href="#" class="header__list-link header__list-link--new">Новые поступления</a></li>
             <li class="header__list-item header__list-item--sale"><a href="#" class="header__list-link header__list-link--sale">Распродажа</a></li>
@@ -49,11 +49,13 @@
                 <legend class="radiobutton__tittle">Тип</legend>
                 <div class="radiobutton__container">
                   <label class="radiobutton__block">
-                    <input type="radio" name="accessories" class="radiobutton__button" checked>
+                    <input type="radio" name="accessories" id="radio-accsessories" class="visually-hidden" checked>
+                    <span class="radiobutton__radio-indicator"></span>
                     <span class="radiobutton__text">Аксессуар для интерьера</span>
                   </label>
                   <label class="radiobutton__block">
-                    <input type="radio" name="toys" class="radiobutton__button">
+                    <input type="radio" name="toys" id="radio-toy" class="visually-hidden">
+                    <span class="radiobutton__radio-indicator"></span>
                     <span class="radiobutton__text">Детская игрушка</span>
                   </label>
                 </div>
@@ -63,28 +65,34 @@
               <div class="checkbox__wrapper">
                 <legend class="checkbox__tittle">Цвет</legend>
                 <div class="checkbox__container">
-                  <label class="checkbox__block">
-                    <input type="checkbox" name="white" id="color-white" class="checkbox__field">
+                  <label class="checkbox__block checkbox__block--white">
+                    <input type="checkbox" name="white" id="color-white" class="visually-hidden" checked>
+                    <span class="checkbox__field "></span>
                     <span class="checkbox__text">Белый</span>
                   </label>
-                  <label class="checkbox__block">
-                    <input type="checkbox" name="grey" id="color-grey" class="checkbox__field">
+                  <label class="checkbox__block checkbox__block--grey">
+                    <input type="checkbox" name="grey" id="color-grey" class="visually-hidden" checked>
+                    <span class="checkbox__field"></span>
                     <span class="checkbox__text">Серый</span>
                   </label>
-                  <label class="checkbox__block">
-                    <input type="checkbox" name="tifany" id="color-tifany" class="checkbox__field">
+                  <label class="checkbox__block checkbox__block--tiffany">
+                    <input type="checkbox" name="tifany" id="color-tiffany" class="visually-hidden">
+                    <span class="checkbox__field"></span>
                     <span class="checkbox__text">«Тиффани»</span>
                   </label>
-                  <label class="checkbox__block">
-                    <input type="checkbox" name="black" id="color-black" class="checkbox__field">
+                  <label class="checkbox__block checkbox__block--black">
+                    <input type="checkbox" name="black" id="color-black" class="visually-hidden">
+                    <span class="checkbox__field"></span>
                     <span class="checkbox__text">Черный</span>
                   </label>
-                  <label class="checkbox__block">
-                    <input type="checkbox" name="pink" id="color-pink" class="checkbox__field">
+                  <label class="checkbox__block checkbox__block--pink">
+                    <input type="checkbox" name="pink" id="color-pink" class="visually-hidden">
+                    <span class="checkbox__field"></span>
                     <span class="checkbox__text">Розовый</span>
                   </label>
-                  <label class="checkbox__block">
-                    <input type="checkbox" name="orange" id="color-orange" class="checkbox__field">
+                  <label class="checkbox__block checkbox__block--orange">
+                    <input type="checkbox" name="orange" id="color-orange" class="visually-hidden">
+                    <span class="checkbox__field"></span>
                     <span class="checkbox__text">Оранжевый</span>
                   </label>
                 </div>
@@ -93,7 +101,7 @@
             <fieldset class="text-field">
               <div class="text-field__wrapper">
                 <legend class="text-field__tittle">ФИО</legend>
-                <div class="">
+                <div class="text-field__container">
                   <label class="text-field__block">
                     <span class="text-field__text">Имя:</span>
                     <input type="text" name="name" id="text-name" placeholder="Введите ваше имя*" class="text-field__field text-field__field--name">
@@ -103,24 +111,24 @@
                     <input type="text" name="surname" id="text-surname" placeholder="Укажите фамилию*" class="text-field__field">
                   </label>
                   <label class="text-field__block">
-                <span class="text-field__text">Отчество:</span>
-                <input type="text" name="secondName" id="text-secondName" placeholder="Отчество, если желаете" class="text-field__field">
-              </label>
+                    <span class="text-field__text">Отчество:</span>
+                    <input type="text" name="secondName" id="text-secondName" placeholder="Отчество, если желаете" class="text-field__field">
+                  </label>
                 </div>
               </div>
             </fieldset>
-            <fieldset class="text-field">
-              <div class="text-field__wrapper">
-              <legend class="text-field__tittle">тел</legend>
-                <label class="text-field__block">
+            <fieldset class="text-field text-field--phone">
+              <div class="text-field__wrapper text-field__wrapper--phone">
+              <legend class="text-field__tittle text-field__tittle--phone">тел</legend>
+                <label class="text-field__block text-field__block--phone">
                   <input type="text" name="phonenumber" id="text-phonenumber" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="text-field__field text-field__field--phone">
                 </label>
               </div>
             </fieldset>
-            <fieldset class="text-field">
-              <div class="text-field__wrapper">
+            <fieldset class="text-field text-field--e-mail">
+              <div class="text-field__wrapper text-field__wrapper--e-mail">
                 <legend class="text-field__tittle text-field__tittle--email">E-mail</legend>
-                <label class="text-field__block">
+                <label class="text-field__block text-field__block--e-mail">
                   <input type="text" name="email" id="text-email" placeholder="Ваш Email*" class="text-field__field text-field__field--e-mail">
                 </label>
               </div>
@@ -133,6 +141,7 @@
                   <small class="text-area__comment"><sup>*</sup>Поля обязательны для заполнения</small>
                   <button type="submit" class="text-area__button button">Отправить заказ</button>
                 </div>
+              </div>
               </div>
             </fieldset>
           </form>

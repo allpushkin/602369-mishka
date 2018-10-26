@@ -1,7 +1,13 @@
 .radiobutton {
   @include wrapper;
+  @include reset-position;
   border: none;
-  margin-bottom: 20px;
+
+  &__wrapper {
+    padding-top: 6px;
+    padding-left: 29px;
+    padding-bottom: 17px;
+  }
 }
 
 .radiobutton__tittle {
@@ -12,7 +18,7 @@
   color: $green;
   text-transform: uppercase;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   &::after {
     content: "";
@@ -30,14 +36,64 @@
   @include reset-position;
   @include flex;
   align-items: flex-start;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.radiobutton__block input[type="radio"] + .radiobutton__radio-indicator {
+  display: block;
+  position: relative;
+  width: 39px;
+  height: 39px;
+  border: 2px solid $black;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+.radiobutton__block input[type="radio"]:checked + .radiobutton__radio-indicator {
+  display: block;
+  width: 39px;
+  height: 39px;
+  margin-right: 25px;
+  border: 2px solid $black;
+  border-radius: 20px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: $radio-green;
+  }
+}
+
+.radiobutton__block input[type="radio"]:hover + .radiobutton__radio-indicator,
+.radiobutton__block input[type="radio"]:focus + .radiobutton__radio-indicator {
+  border: 2px solid $radio-green;
+}
+
+.radiobutton__block input[type="radio"]:hover:checked + .radiobutton__radio-indicator,
+.radiobutton__block input[type="radio"]:focus:checked + .radiobutton__radio-indicator {
+  border: 2px solid $radio-green;
+}
+
+.radiobutton__block input[type="radio"]:active + .radiobutton__radio-indicator {
+  border: 2px solid $btn-active-grey;
+}
+
+.radiobutton__block input[type="radio"]:active:checked + .radiobutton__radio-indicator {
+  border: 2px solid $btn-active-grey;
 }
 
 .radiobutton__text {
   @include textsize(17px, 18px);
+  width: 190px;
   display: block;
-  margin-right: 50px;
-  margin-left: 22px;
+  padding-right: 35px;
+  padding-top: 9px;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,15 +101,18 @@
     &__wrapper {
       @include flex;
       align-items: flex-start;
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding: 0;
+      padding-top: 47px;
+      padding-left: 51px;
+      padding-bottom: 35px;
     }
   }
 
   .radiobutton__tittle {
     @include reset-position;
     width: 160px;
-    margin-right: 7px;
+    margin-right: 6px;
+    padding-top: 17px;
 
     &::after {
       display: none;
@@ -67,14 +126,49 @@
     width: 350px;
   }
 
+  .radiobutton__block:first-child {
+    margin-bottom: 24px;
+  }
+
+  .radiobutton__block input[type="radio"] + .radiobutton__radio-indicator {
+    width: 52px;
+    height: 52px;
+    border: 2px solid $black;
+    border-radius: 25px;
+    margin-right: 29px;
+  }
+
+  .radiobutton__block input[type="radio"]:checked + .radiobutton__radio-indicator {
+    display: block;
+    width: 52px;
+    height: 52px;
+    margin-right: 29px;
+    border-radius: 25px;
+
+    &::after {
+      top: 13px;
+      left: 13px;
+      width: 22px;
+      height: 22px;
+      border-radius: 11px;
+    }
+  }
+
   .radiobutton__text {
     @include textsize(19px, 18px);
+    width: 290px;
+    padding-top: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .radiobutton__wrapper {
+    padding-top: 47px;
+    padding-left: 52px;
+  }
+
   .radiobutton__tittle {
-    width: 175px;
+    width: 173px;
     padding-left: 62px;
     margin-right: 0;
   }

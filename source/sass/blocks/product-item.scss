@@ -4,21 +4,36 @@
   background-color: $white;
   margin-bottom: 30px;
   flex-direction: column;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.product-item__image {
+  img {
+    width: 260px;
+  }
 }
 
 .product-item__info {
   @include flex;
   flex-direction: column;
+  align-items: flex-start;
   width: 260px;
   border: 1px solid $border-grey;
   border-top: none;
-  padding: 28px;
+  padding-top: 27px;
+  padding-right: 28px;
+  padding-left: 27px;
+  padding-bottom: 27px;
+  margin-top: -6px;
 }
 
 .product-item__tittle {
   @include textsize(17px, 24px);
   @include reset-position;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .product-item__text {
@@ -41,15 +56,121 @@
 
 @media (min-width: $tablet-width) {
   .product-item {
-    width: 668px;
+    width: 669px;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 48px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .product-item__image {
+    img {
+      width: 334px;
+    }
+  }
+
+  .product-item__info {
+    width: 334px;
+    border: 1px solid $border-grey;
+    border-left: none;
+    padding-top: 25px;
+    padding-right: 65px;
+    padding-left: 27px;
+    padding-bottom: 26px;
+    margin-top: 0;
+  }
+
+  .product-item__tittle {
+    @include textsize(20px, 24px);
+
+    &--bedclothes-basket {
+      margin-bottom: 8px;
+    }
+  }
+
+  .product-item__text {
+    @include textsize(15px, 30px);
+    margin-bottom: 175px;
+
+    &--bedclothes-basket {
+      margin-bottom: 172px;
+    }
+
+    &--toy-basket {
+      margin-bottom: 151px;
+    }
+  }
+
+  .product-item__price-block {
+    width: 269px;
+    padding-top: 22px;
+    padding-left: 5px;
+  }
+
+  .product-item__price {
+    @include textsize(17px, 24px);
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-item {
-    width: 315px;
+    width: 317px;
     flex-direction: column;
+    margin-bottom: 0;
+    margin-right: 50px;
+
+    &:first-child {
+      margin-right: 49px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .product-item__image {
+    img {
+      width: 317px;
+    }
+  }
+
+  .product-item__info {
+    width: 317px;
+    border: 1px solid $border-grey;
+    border-top: none;
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-left: 27px;
+    padding-bottom: 26px;
+    margin-top: -6px;
+  }
+
+  .product-item__tittle {
+    @include textsize(20px, 24px);
+
+    &--bedclothes-basket {
+      margin-bottom: 5px;
+    }
+  }
+
+  .product-item__text {
+    @include textsize(15px, 30px);
+    margin-bottom: 38px;
+
+    &--bedclothes-basket {
+      margin-bottom: 38px;
+    }
+
+    &--toy-basket {
+      margin-bottom: 14px;
+    }
+  }
+
+  .product-item__price-block {
+    padding-left: 0;
   }
 }

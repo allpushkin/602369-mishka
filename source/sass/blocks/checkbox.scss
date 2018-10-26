@@ -1,7 +1,12 @@
 .checkbox {
-  @include wrapper;
+  @include reset-position;
   border: none;
-  margin-bottom: 20px;
+
+  &__wrapper {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 4px;
+  }
 }
 
 .checkbox__tittle {
@@ -11,7 +16,7 @@
   color: $green;
   text-transform: uppercase;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   &::after {
     content: "";
@@ -28,8 +33,40 @@
 .checkbox__block {
   @include reset-position;
   @include flex;
-  align-items: flex-start;
-  margin-bottom: 15px;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.checkbox__block input[type="checkbox"] + .checkbox__field {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 39px;
+  border: 2px solid $black;
+}
+
+.checkbox__block input[type="checkbox"]:checked + .checkbox__field {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    width: 21px;
+    height: 17px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+}
+
+.checkbox__block input[type="checkbox"] + .checkbox__field:hover,
+.checkbox__block input[type="checkbox"] + .checkbox__field:focus {
+  border: 2px solid $radio-green;
+}
+
+.checkbox__block input[type="checkbox"] + .checkbox__field:active {
+  border: 2px solid $btn-active-grey;
 }
 
 .checkbox__text {
@@ -41,13 +78,15 @@
 
 @media (min-width: $tablet-width) {
   .checkbox {
+    width: $tablet-width;
     background-color: $block-grey;
 
     &__wrapper {
       @include flex;
       align-items: flex-start;
       padding-top: 50px;
-      padding-bottom: 50px;
+      padding-left: 51px;
+      padding-bottom: 26px;
     }
   }
 
@@ -55,7 +94,8 @@
     @include reset-position;
     width: 160px;
     text-align: left;
-    margin-right: 7px;
+    padding-top: 17px;
+    margin-right: 6px;
 
     &::after {
       display: none;
@@ -66,15 +106,58 @@
     @include textsize(19px, 18px);
     @include flex;
     flex-wrap: wrap;
-    width: 480px;
+    width: 510px;
+  }
+
+  .checkbox__block {
+    margin-bottom: 24px;
+
+    &--white {
+      margin-right: 116px;
+    }
+
+    &--tiffany {
+      margin-right: 64px;
+    }
+
+    &--pink {
+      margin-right: 93px;
+    }
+  }
+
+  .checkbox__block input[type="checkbox"] + .checkbox__field {
+    width: 54px;
+    height: 52px;
+  }
+
+  .checkbox__block input[type="checkbox"]:checked + .checkbox__field {
+    &::after {
+      top: 13px;
+      left: 8px;
+      width: 34px;
+      height: 23px;
+      background-position: bottom center;
+    }
   }
 
   .checkbox__text {
     @include textsize(19px, 18px);
+    margin-right: 0;
+    margin-left: 27px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .checkbox {
+    width: 100%;
+  }
+
+  .checkbox__wrapper {
+    padding-top: 48px;
+    padding-bottom: 26px;
+    padding-left: 49px;
+  }
+
   .checkbox__tittle {
     width: 175px;
     padding-left: 62px;
@@ -82,12 +165,40 @@
   }
 
   .checkbox__container {
-    width: 680px;
+    width: 730px;
   }
 
   .checkbox__block-list {
     @include flex;
     flex-wrap: wrap;
+  }
+
+  .checkbox__block {
+    margin-bottom: 24px;
+
+    &--white {
+      margin-right: 116px;
+    }
+
+    &--grey {
+      margin-right: 118px;
+    }
+
+    &--tiffany {
+      margin-right: 0;
+    }
+
+    &--black {
+      margin-right: 102px;
+    }
+
+    &--pink {
+      margin-right: 95px;
+    }
+
+    &--orange {
+      margin-right: 0;
+    }
   }
 
   .checkbox__text {

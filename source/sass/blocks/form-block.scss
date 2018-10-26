@@ -1,15 +1,15 @@
 .form-block {
-  width: 100%;
+  @include wrapper;
   background-color: $white;
 }
 
 .form-block__text-block {
   @include centerblock;
   width: $mobile-width;
-  padding-top: 30px;
+  padding-top: 22px;
   padding-right: 30px;
   padding-left: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 18px;
 }
 
 .form-block__text {
@@ -17,29 +17,34 @@
   @include reset-position;
   display: block;
   font-weight: normal;
-  margin-bottom: 50px;
 }
 
 @media (min-width: $tablet-width) {
-  .form-block {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  .form-block__wrapper {
+    padding: 0;
+    padding-top: 73px;
   }
 
   .form-block__text-block {
-    width: $tablet-width;
-    padding-right: 50px;
+    padding: 0;
     padding-left: 50px;
+    width: $tablet-width;
+    margin-bottom: 10px;
   }
 
   .form-block__text {
     @include textsize(17px, 30px);
     width: 668px;
-    margin: 0 50px;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .form-block__wrapper {
+    padding-top: 124px;
+    padding-left: 51px;
+  }
+
   .form-block__text-block {
     width: $desktop-width;
   }
@@ -48,6 +53,5 @@
     width: 730px;
     margin: 0 175px;
     padding: 0;
-    padding-left: 50px;
   }
 }
