@@ -1,4 +1,8 @@
-.modal {
+.modal__close {
+  display: none;
+}
+
+.modal__open {
   @include centerblock;
   width: 320px;
   padding-top: 30px;

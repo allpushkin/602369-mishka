@@ -88,8 +88,8 @@
   .header__logo {
     width: 320px;
     padding-right: 159px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 17px;
+    padding-bottom: 12px;
     padding-left: 0;
     border-bottom: none;
     order: 0;
@@ -104,7 +104,7 @@
     &--catalog {
       width: 168px;
       order: 3;
-      padding-top: 17px;
+      padding-top: 16px;
       padding-bottom: 10px;
       padding-right: 10px;
       padding-left: 0;
@@ -114,7 +114,7 @@
     &--order {
       width: 192px;
       order: 4;
-      padding-top: 17px;
+      padding-top: 16px;
       padding-bottom: 10px;
       padding-right: 35px;
       padding-left: 0;
@@ -125,8 +125,10 @@
       margin: 0;
       width: 84px;
       order: 1;
+      padding-top: 34px;
+      padding-bottom: 28px;
       padding-right: 30px;
-      padding-left: 33px;
+      padding-left: 34px;
       border-right: 1px solid $light-grey;
       border-left: 1px solid $light-grey;
     }
@@ -134,8 +136,8 @@
     &--basket {
       @include textsize(17px, 24px);
       width: 264px;
-      padding-top: 40px;
-      padding-bottom: 31px;
+      padding-top: 31px;
+      padding-bottom: 35px;
       padding-right: 0;
       padding-left: 30px;
       order: 2;
@@ -171,7 +173,7 @@
     display: block;
     position: absolute;
     bottom: 10px;
-    right: 50px;
+    right: 49px;
     font-weight: normal;
     z-index: 200;
   }
@@ -180,10 +182,10 @@
 @media (min-width: $desktop-width) {
   .header__logo {
     width: 282px;
-    padding-top: 20px;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-bottom: 26px;
+    padding-top: 7px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 0;
     order: 2;
   }
 
