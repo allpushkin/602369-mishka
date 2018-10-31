@@ -28,6 +28,21 @@
   @include textsize(19px, 24px);
   width: 100%;
   color: $white;
+
+  &:hover,
+  &focus {
+    .product-group__image {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .product-group {
+      opacity: 0.3;
+    }
+  }
 }
 
 .product-group__link-text {

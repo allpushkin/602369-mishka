@@ -51,6 +51,20 @@
   }
 }
 
+.contacts__table-link {
+  border-bottom: 1px solid $radio-green;
+
+  &:hover,
+  &:focus {
+    color: $green-link;
+    border-color: $green-link;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .contacts__map {
   width: 320px;
   height: 457px;

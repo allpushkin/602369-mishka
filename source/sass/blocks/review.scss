@@ -14,11 +14,12 @@
       position: absolute;
       bottom: -5px;
       left: 0;
-      width: 260px;
-      height: 34px;
+      width: $mobile-width;
+      height: 25px;
       background-image: url("../img/bg-zigzag-line.svg");
       background-position: bottom center;
       background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }
@@ -77,6 +78,15 @@
 
   &--after {
     border-left: 1px solid $light-grey;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

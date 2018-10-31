@@ -15,7 +15,7 @@
 .information-block__tittle {
   @include textsize(17px, 24px);
   @include reset-position;
-  display: block;
+  @include flex;
   padding-top: 23px;
   padding-bottom: 24px;
   padding-left: 88px;
@@ -23,6 +23,15 @@
   border: 1px solid $light-grey;
   border-bottom: none;
   position: relative;
+
+  svg {
+    position: absolute;
+    top: 29px;
+    left: 33px;
+    width: 32px;
+    height: 32px;
+    fill: $green;
+  }
 }
 
 .information-block__image-block {
@@ -89,6 +98,11 @@
     border-bottom: none;
     padding-top: 38px;
     padding-left: 105px;
+
+    svg {
+      top: 33px;
+      left: 40px;
+    }
   }
 
   .information-block__image-block {
@@ -152,6 +166,11 @@
     padding-right: 50px;
     padding-left: 79px;
     text-align: left;
+
+    svg {
+      top: 41px;
+      left: 82px;
+    }
   }
 
   .information-block__image-block {

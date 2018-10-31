@@ -251,4 +251,10 @@
       order: 5;
     }
   }
+
+  .pluses__image {
+    &--production {
+      margin-right: 150px;
+    }
+  }
 }

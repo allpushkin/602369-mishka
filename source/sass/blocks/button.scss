@@ -12,4 +12,17 @@
   border: 2px solid $black;
   text-align: center;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $button-active;
+    border-color: $button-active;
+  }
+
+  &:active {
+    color: $white-active;
+    background-color: $button-active;
+    border-color: $button-active;
+  }
 }

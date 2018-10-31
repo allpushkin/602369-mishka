@@ -46,9 +46,29 @@
   display: block;
   padding-left: 14px;
   margin-bottom: 20px;
+  position: relative;
 
   &--phone {
     padding-left: 16px;
+  }
+}
+
+.text-field__image {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  fill: $black-basket;
+
+  &--phone {
+    width: 25px;
+    height: 24px;
+    top: 7px;
+    right: 52px;
+  }
+
+  &--mail {
+    top: 6px;
+    right: 49px;
   }
 }
 
@@ -76,6 +96,26 @@
   &--e-mail {
     padding-bottom: 6px;
   }
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $radio-green;
+    outline: none;
+  }
+
+  &:active {
+    color: $black;
+    outline: none;
+  }
+}
+
+.text-field__field:hover ~ .text-field__image,
+.text-field__field:focus ~ .text-field__image {
+  fill: $radio-green;
+}
+
+.text-field__field:active ~ .text-field__image {
+  fill: $radio-green;
 }
 
 @media (min-width: $tablet-width) {
@@ -83,19 +123,19 @@
     &__wrapper {
       @include flex;
       padding-top: 44px;
-      padding-bottom: 50px;
+      padding-bottom: 20px;
       padding-left: 37px;
       align-items: flex-start;
       justify-content: flex-start;
 
       &--phone {
-        padding-top: 15px;
+        padding-top: 45px;
         padding-bottom: 3px;
       }
 
       &--e-mail {
         padding-top: 10px;
-        padding-bottom: 50px;
+        padding-bottom: 33px;
       }
     }
 
@@ -156,6 +196,18 @@
       background-color: $block-grey;
     }
   }
+
+  .text-field__image {
+    &--phone {
+      top: 11px;
+      right: 26px;
+    }
+
+    &--mail {
+      top: 10px;
+      right: 22px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -182,6 +234,14 @@
     width: 175px;
     margin-right: 0;
     padding-left: 60px;
+
+    &--e-mail {
+      width: 173px;
+    }
+
+    &--phone {
+      width: 173px;
+    }
   }
 
   .text-field__block {
@@ -201,6 +261,24 @@
 
     &--e-mail {
       width: 700px;
+    }
+  }
+
+  .text-field__field {
+    &--e-mail {
+      padding-bottom: 0;
+    }
+  }
+
+  .text-field__image {
+    &--phone {
+      top: 11px;
+      right: 10px;
+    }
+
+    &--mail {
+      top: 9px;
+      right: 6px;
     }
   }
 }
