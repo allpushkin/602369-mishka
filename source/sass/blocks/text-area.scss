@@ -3,7 +3,7 @@
   border: none;
 
   &__wrapper {
-    padding-left: 15px;
+    padding-left: 26px;
   }
 }
 
@@ -81,7 +81,7 @@
       flex-wrap: wrap;
       align-items: flex-start;
       padding-top: 44px;
-      padding-left: 36px;
+      padding-left: 48px;
     }
   }
 
@@ -133,7 +133,8 @@
 @media (min-width: $desktop-width) {
   .text-area {
     &__wrapper {
-      padding-top: 46px;
+      padding-top: 44px;
+      padding-left: 100px;
     }
   }
 

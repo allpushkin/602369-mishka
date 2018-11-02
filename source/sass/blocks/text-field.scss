@@ -3,6 +3,10 @@
   border: none;
   padding-bottom: 6px;
   background-color: $white;
+
+  &__wrapper {
+    padding-left: 13px;
+  }
 }
 
 .text-field__tittle {
@@ -22,13 +26,13 @@
     display: block;
     position: absolute;
     top: 8px;
-    right: 45px;
+    right: 33px;
     width: 199px;
     height: 1px;
     background-color: $green;
   }
 
-  &--email {
+  &--e-mail {
     padding-left: 15px;
     margin-bottom: 11px;
 
@@ -47,10 +51,6 @@
   padding-left: 14px;
   margin-bottom: 20px;
   position: relative;
-
-  &--phone {
-    padding-left: 16px;
-  }
 }
 
 .text-field__image {
@@ -63,12 +63,12 @@
     width: 25px;
     height: 24px;
     top: 7px;
-    right: 52px;
+    right: 42px;
   }
 
   &--mail {
-    top: 6px;
-    right: 49px;
+    top: 7px;
+    right: 37px;
   }
 }
 
@@ -124,7 +124,7 @@
       @include flex;
       padding-top: 44px;
       padding-bottom: 20px;
-      padding-left: 37px;
+      padding-left: 50px;
       align-items: flex-start;
       justify-content: flex-start;
 
@@ -217,16 +217,18 @@
 
   .text-field__wrapper {
     padding-top: 45px;
-    padding-bottom: 20px;
+    padding-bottom: 26px;
+    padding-left: 100px;
 
     &--phone {
-      padding-top: 49px;
+      padding-top: 44px;
       padding-bottom: 10px;
+      padding-left: 101px;
     }
 
     &--e-mail {
-      padding-top: 10px;
-      padding-bottom: 36px;
+      padding-top: 8px;
+      padding-bottom: 40px;
     }
   }
 
@@ -237,6 +239,7 @@
 
     &--e-mail {
       width: 173px;
+      padding-top: 19px;
     }
 
     &--phone {
@@ -257,15 +260,12 @@
 
     &--phone {
       width: 700px;
+      padding-left: 16px;
+      padding-bottom: 0;
     }
 
     &--e-mail {
       width: 700px;
-    }
-  }
-
-  .text-field__field {
-    &--e-mail {
       padding-bottom: 0;
     }
   }
@@ -273,12 +273,12 @@
   .text-field__image {
     &--phone {
       top: 11px;
-      right: 10px;
+      right: 8px;
     }
 
     &--mail {
-      top: 9px;
-      right: 6px;
+      top: 11px;
+      right: 3px;
     }
   }
 }

@@ -51,6 +51,7 @@
 .review__author-link {
   @include textsize(17px, 30px);
   margin-right: 120px;
+  font-weight: normal;
 }
 
 .review__btn-block {
