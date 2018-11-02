@@ -113,8 +113,7 @@
         <nav class="header__menu">
           <ul class="header__menu-list">
             <li class="header__logo">
-              <a class="header__logo-link">
-                <picture class="header__logo-image">
+              <picture class="header__logo-image">
                   <source
                     media="(min-width: 1250px)"
                     srcset="img/logo-desktop.svg">
@@ -123,7 +122,6 @@
                     srcset="img/logo-tablet.svg">
                   <img src="img/logo-mobile.svg" alt="Логотип Мишка">
                 </picture>
-              </a>
             </li>
             <li class="header__list-item header__list-item--catalog"><a href="catalog.html" class="header__list-link header__list-link--catalog">Каталог товаров</a></li>
             <li class="header__list-item header__list-item--order"><a href="form.html" class="header__list-link header__list-link--order">Вязание на заказ</a></li>
@@ -287,6 +285,7 @@
             </tr>
           </table>
           <div class="contacts__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1309.4668354557912!2d30.32168780960884!3d59.93864715578773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1541105306430"></iframe>
           </div>
           <a href="#" class="button contacts__button">Напишите нам</a>
         </div>
@@ -348,17 +347,20 @@
           <ul class="modal__list">
             <li class="modal__item modal__item--size-s">
               <label class="modal__item-part">
-                <input type="radio" name="s" id="small-size" class="visually-hidden" checked>
+                <input type="radio" name="size" id="small-size" class="visually-hidden" checked>
+                <span class="modal__item-name">s</span>
               </label>
             </li>
             <li class="modal__item modal__item--size-m">
               <label class="modal__item-part">
-                <input type="radio" name="m" id="medium-size" class="visually-hidden">
+                <input type="radio" name="size" id="medium-size" class="visually-hidden">
+                <span class="modal__item-name">m</span>
               </label>
             </li>
             <li class="modal__item modal__item--size-l">
               <label class="modal__item-part">
-                <input type="radio" name="l" id="large-size" class="visually-hidden">
+                <input type="radio" name="size" id="large-size" class="visually-hidden">
+                <span class="modal__item-name">l</span>
               </label>
             </li>
           </ul>
