@@ -51,18 +51,38 @@
   }
 }
 
+.contacts__table-link {
+  border-bottom: 1px solid $radio-green;
+
+  &:hover,
+  &:focus {
+    color: $green-link;
+    border-color: $green-link;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .contacts__map {
   width: 320px;
   height: 457px;
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 39px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/map-mobile@2x.jpg");
     background-size: 322px auto;
   }
-  margin-bottom: 39px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 }
 
 .contacts__button {
@@ -189,6 +209,10 @@
       flex-direction: column;
       align-items: flex-start;
     }
+  }
+
+  .contacts__table-link {
+    padding-bottom: 3px;
   }
 
   .contacts__button {

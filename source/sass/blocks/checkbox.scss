@@ -1,4 +1,5 @@
 .checkbox {
+  @include wrapper;
   @include reset-position;
   border: none;
 
@@ -78,11 +79,12 @@
 
 @media (min-width: $tablet-width) {
   .checkbox {
-    width: $tablet-width;
+    width: 100%;
     background-color: $block-grey;
 
     &__wrapper {
       @include flex;
+      width: $tablet-width;
       align-items: flex-start;
       padding-top: 50px;
       padding-left: 51px;
@@ -148,14 +150,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .checkbox {
-    width: 100%;
-  }
-
   .checkbox__wrapper {
-    padding-top: 48px;
-    padding-bottom: 26px;
-    padding-left: 49px;
+    width: $desktop-width;
+    padding-top: 49px;
+    padding-bottom: 25px;
+    padding-left: 100px;
   }
 
   .checkbox__tittle {

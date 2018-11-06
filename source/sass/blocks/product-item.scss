@@ -26,8 +26,17 @@
   padding-top: 27px;
   padding-right: 28px;
   padding-left: 27px;
-  padding-bottom: 27px;
+  padding-bottom: 26px;
   margin-top: -6px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px $black-shadow;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px $black-shadow;
+  }
 }
 
 .product-item__tittle {
@@ -45,9 +54,34 @@
 }
 
 .product-item__price-block {
+  @include flex;
+  justify-content: space-between;
   width: 204px;
-  border-top: 1px solid $footer-line;
-  padding-top: 20px;
+  padding-top: 21px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 204px;
+    height: 1px;
+    background-color: $border-grey;
+    position: absolute;
+    top: -1px;
+    left: 0;
+  }
+}
+
+.product-item__button-basket {
+  fill: $black-basket;
+
+  &:focus,
+  &:hover {
+    fill: $green;
+  }
+
+  &:active {
+    fill: $green-active;
+  }
 }
 
 .product-item__price {
@@ -75,12 +109,12 @@
 
   .product-item__info {
     width: 334px;
-    border: 1px solid $border-grey;
-    border-left: none;
     padding-top: 25px;
     padding-right: 65px;
     padding-left: 27px;
     padding-bottom: 26px;
+    border: 1px solid $border-grey;
+    border-left: none;
     margin-top: 0;
   }
 
@@ -106,9 +140,19 @@
   }
 
   .product-item__price-block {
-    width: 269px;
-    padding-top: 22px;
+    width: 274px;
+    padding-top: 24px;
     padding-left: 5px;
+
+    &::before {
+      width: 268px;
+      top: 1px;
+      left: 5px;
+    }
+  }
+
+  .product-item__button-basket {
+    margin-right: 0;
   }
 
   .product-item__price {
@@ -172,5 +216,16 @@
 
   .product-item__price-block {
     padding-left: 0;
+    padding-top: 22px;
+
+    &::before {
+      width: 256px;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .product-item__button-basket {
+    margin-right: 18px;
   }
 }

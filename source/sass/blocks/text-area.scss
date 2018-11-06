@@ -3,7 +3,7 @@
   border: none;
 
   &__wrapper {
-    padding-left: 15px;
+    padding-left: 26px;
   }
 }
 
@@ -42,6 +42,15 @@
   height: 142px;
   border: 2px solid $black;
   margin-left: 1px;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $radio-green;
+  }
+
+  &:active {
+    color: $button-active;
+  }
 }
 
 .text-area__submit-block {
@@ -71,8 +80,8 @@
       @include flex;
       flex-wrap: wrap;
       align-items: flex-start;
-      padding-top: 27px;
-      padding-left: 36px;
+      padding-top: 44px;
+      padding-left: 48px;
     }
   }
 
@@ -123,8 +132,11 @@
 
 @media (min-width: $desktop-width) {
   .text-area {
+    padding: 0;
+
     &__wrapper {
-      padding-top: 46px;
+      padding-top: 44px;
+      padding-left: 100px;
     }
   }
 

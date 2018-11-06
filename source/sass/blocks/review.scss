@@ -14,11 +14,12 @@
       position: absolute;
       bottom: -5px;
       left: 0;
-      width: 260px;
-      height: 34px;
+      width: $mobile-width;
+      height: 25px;
       background-image: url("../img/bg-zigzag-line.svg");
       background-position: bottom center;
       background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }
@@ -50,6 +51,7 @@
 .review__author-link {
   @include textsize(17px, 30px);
   margin-right: 120px;
+  font-weight: normal;
 }
 
 .review__btn-block {
@@ -77,6 +79,15 @@
 
   &--after {
     border-left: 1px solid $light-grey;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -191,6 +202,10 @@
 
     .review__author {
       @include textsize(17px, 24px);
+    }
+
+    .review__btn-block {
+      margin-left: 253px;
     }
 
     .review__button {

@@ -3,6 +3,10 @@
   border: none;
   padding-bottom: 6px;
   background-color: $white;
+
+  &__wrapper {
+    padding-left: 13px;
+  }
 }
 
 .text-field__tittle {
@@ -22,13 +26,13 @@
     display: block;
     position: absolute;
     top: 8px;
-    right: 45px;
+    right: 33px;
     width: 199px;
     height: 1px;
     background-color: $green;
   }
 
-  &--email {
+  &--e-mail {
     padding-left: 15px;
     margin-bottom: 11px;
 
@@ -46,9 +50,25 @@
   display: block;
   padding-left: 14px;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.text-field__image {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  fill: $black-basket;
 
   &--phone {
-    padding-left: 16px;
+    width: 25px;
+    height: 24px;
+    top: 7px;
+    right: 42px;
+  }
+
+  &--mail {
+    top: 7px;
+    right: 37px;
   }
 }
 
@@ -76,6 +96,26 @@
   &--e-mail {
     padding-bottom: 6px;
   }
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $radio-green;
+    outline: none;
+  }
+
+  &:active {
+    color: $black;
+    outline: none;
+  }
+}
+
+.text-field__field:hover ~ .text-field__image,
+.text-field__field:focus ~ .text-field__image {
+  fill: $radio-green;
+}
+
+.text-field__field:active ~ .text-field__image {
+  fill: $radio-green;
 }
 
 @media (min-width: $tablet-width) {
@@ -83,19 +123,19 @@
     &__wrapper {
       @include flex;
       padding-top: 44px;
-      padding-bottom: 50px;
-      padding-left: 37px;
+      padding-bottom: 20px;
+      padding-left: 50px;
       align-items: flex-start;
       justify-content: flex-start;
 
       &--phone {
-        padding-top: 15px;
+        padding-top: 45px;
         padding-bottom: 3px;
       }
 
       &--e-mail {
         padding-top: 10px;
-        padding-bottom: 50px;
+        padding-bottom: 33px;
       }
     }
 
@@ -156,25 +196,39 @@
       background-color: $block-grey;
     }
   }
+
+  .text-field__image {
+    &--phone {
+      top: 11px;
+      right: 26px;
+    }
+
+    &--mail {
+      top: 10px;
+      right: 22px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .text-field {
-    padding-bottom: 0;
+    padding: 0;
   }
 
   .text-field__wrapper {
     padding-top: 45px;
-    padding-bottom: 20px;
+    padding-bottom: 26px;
+    padding-left: 100px;
 
     &--phone {
-      padding-top: 49px;
+      padding-top: 44px;
       padding-bottom: 10px;
+      padding-left: 101px;
     }
 
     &--e-mail {
-      padding-top: 10px;
-      padding-bottom: 36px;
+      padding-top: 8px;
+      padding-bottom: 40px;
     }
   }
 
@@ -182,6 +236,15 @@
     width: 175px;
     margin-right: 0;
     padding-left: 60px;
+
+    &--e-mail {
+      width: 173px;
+      padding-top: 19px;
+    }
+
+    &--phone {
+      width: 173px;
+    }
   }
 
   .text-field__block {
@@ -197,10 +260,25 @@
 
     &--phone {
       width: 700px;
+      padding-left: 16px;
+      padding-bottom: 0;
     }
 
     &--e-mail {
       width: 700px;
+      padding-bottom: 0;
+    }
+  }
+
+  .text-field__image {
+    &--phone {
+      top: 11px;
+      right: 8px;
+    }
+
+    &--mail {
+      top: 11px;
+      right: 3px;
     }
   }
 }

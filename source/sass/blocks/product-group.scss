@@ -9,17 +9,15 @@
   @include centerblock;
   background-color: $green;
   width: $mobile-width;
-  padding-top: 23px;
-  padding-right: 30px;
-  padding-left: 28px;
-  padding-bottom: 18px;
 
   &--dark-green {
     background-color: $dark-green;
-    padding-top: 21px;
-    padding-left: 29px;
-    padding-right: 10px;
-    padding-bottom: 22px;
+  }
+
+  &:hover,
+  &:focus {
+    margin-top: -5px;
+    z-index: 1000;
   }
 }
 
@@ -28,6 +26,43 @@
   @include textsize(19px, 24px);
   width: 100%;
   color: $white;
+  padding-top: 23px;
+  padding-right: 30px;
+  padding-left: 28px;
+  padding-bottom: 18px;
+
+  &--dark-green {
+    padding-top: 21px;
+    padding-left: 29px;
+    padding-right: 10px;
+    padding-bottom: 22px;
+  }
+
+  &:hover,
+  &:focus {
+    padding-bottom: 23px;
+
+    .product-group__image {
+      opacity: 0.7;
+    }
+  }
+
+  &--dark-green:hover,
+  &--dark-green:focus {
+    padding-bottom: 27px;
+
+    .product-group__image {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .product-group {
+      opacity: 0.3;
+    }
+  }
 }
 
 .product-group__link-text {
@@ -72,12 +107,17 @@
         background-image: url("../img/bg-zigzag-fill.svg");
         background-position: bottom center;
         background-repeat: no-repeat;
+        z-index: 1500;
       }
     }
   }
 
   .product-group__item {
     width: 50%;
+  }
+
+  .product-group__link {
+    @include textsize(20px, 30px);
     padding-top: 28px;
     padding-right: 36px;
     padding-left: 36px;
@@ -89,10 +129,16 @@
       padding-left: 36px;
       padding-bottom: 38px;
     }
-  }
 
-  .product-group__link {
-    @include textsize(20px, 30px);
+    &:hover,
+    &:focus {
+      padding-bottom: 41px;
+    }
+
+    &--dark-green:hover,
+    &--dark-green:focus {
+      padding-bottom: 38px;
+    }
   }
 
   .product-group__link-text {
@@ -121,7 +167,7 @@
     }
   }
 
-  .product-group__item {
+  .product-group__link {
     padding-top: 27px;
     padding-bottom: 42px;
 
@@ -133,6 +179,7 @@
 
   .product-group__link-text {
     margin-right: 286px;
+
 
     &--toy {
       margin-right: 264px;
