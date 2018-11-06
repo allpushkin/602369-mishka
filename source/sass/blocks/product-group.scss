@@ -9,29 +9,15 @@
   @include centerblock;
   background-color: $green;
   width: $mobile-width;
-  padding-top: 23px;
-  padding-right: 30px;
-  padding-left: 28px;
-  padding-bottom: 18px;
 
   &--dark-green {
     background-color: $dark-green;
-    padding-top: 21px;
-    padding-left: 29px;
-    padding-right: 10px;
-    padding-bottom: 22px;
   }
 
   &:hover,
   &:focus {
     margin-top: -5px;
-    padding-bottom: 23px;
     z-index: 1000;
-  }
-
-  &--dark-green:hover,
-  &--dark-green:focus {
-    padding-bottom: 27px;
   }
 }
 
@@ -40,9 +26,31 @@
   @include textsize(19px, 24px);
   width: 100%;
   color: $white;
+  padding-top: 23px;
+  padding-right: 30px;
+  padding-left: 28px;
+  padding-bottom: 18px;
+
+  &--dark-green {
+    padding-top: 21px;
+    padding-left: 29px;
+    padding-right: 10px;
+    padding-bottom: 22px;
+  }
 
   &:hover,
-  &focus {
+  &:focus {
+    padding-bottom: 23px;
+
+    .product-group__image {
+      opacity: 0.7;
+    }
+  }
+
+  &--dark-green:hover,
+  &--dark-green:focus {
+    padding-bottom: 27px;
+
     .product-group__image {
       opacity: 0.7;
     }
@@ -106,6 +114,10 @@
 
   .product-group__item {
     width: 50%;
+  }
+
+  .product-group__link {
+    @include textsize(20px, 30px);
     padding-top: 28px;
     padding-right: 36px;
     padding-left: 36px;
@@ -127,10 +139,6 @@
     &--dark-green:focus {
       padding-bottom: 38px;
     }
-  }
-
-  .product-group__link {
-    @include textsize(20px, 30px);
   }
 
   .product-group__link-text {
@@ -159,7 +167,7 @@
     }
   }
 
-  .product-group__item {
+  .product-group__link {
     padding-top: 27px;
     padding-bottom: 42px;
 
@@ -171,6 +179,7 @@
 
   .product-group__link-text {
     margin-right: 286px;
+
 
     &--toy {
       margin-right: 264px;

@@ -159,7 +159,7 @@
             </a>
           </div>
           <div class="product-group__item product-group__item--dark-green">
-            <a href="#" class="product-group__link">
+            <a href="#" class="product-group__link product-group__link--dark-green">
               <span class="product-group__link-text product-group__link-text--toy">Детские игрушки</span>
               <svg class="product-group__image product-group__image--toy" width="60px" height="59.62px">
                 <use xlink:href="#icon-toy"></use>
@@ -192,6 +192,9 @@
             </table>
           </div>
           <picture class="weekly-item__image">
+            <source type="image/webp" media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
             <source
               media="(min-width: 1250px)"
               srcset="img/triple-set-desktop@2x.jpg 2x,
@@ -338,7 +341,7 @@
       </div>
     </footer>
       <!-- модальное окно -->
-    <section class="modal__close">
+    <section class="modal modal--close">
       <div class="modal__wrapper">
         <form class="modal__form">
           <h2 class="modal__tittle">Добавить в корзину</h2>

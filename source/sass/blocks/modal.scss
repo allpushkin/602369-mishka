@@ -1,8 +1,5 @@
-.modal__close {
-  display: none;
-}
 
-.modal__open {
+.modal {
   display: block;
   position: fixed;
   top: 0;
@@ -12,6 +9,10 @@
   padding-top: 10%;
   background-color: $white-modal-bg;
   z-index: 10000;
+
+  &--close {
+    display: none;
+  }
 }
 
 .modal__wrapper {
