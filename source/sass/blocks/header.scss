@@ -103,6 +103,10 @@
   }
 }
 
+.header__list-item-close {
+  display: none;
+}
+
 .header__list-link {
   @include textsize(17px, 24px);
 
