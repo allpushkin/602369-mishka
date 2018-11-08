@@ -11,6 +11,7 @@ var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var del = require("del");
+var jso = require("gulp-minify");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -39,6 +40,13 @@ gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"))
+});
+
+gulp.task("jso", function() {
+  return gulp.src("build/js/**/*.js")
+    .pipe(jso())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest('build/js'))
 });
 
 gulp.task("server", function () {
@@ -73,7 +81,8 @@ gulp.task("clean", function () {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
-  "css"
+  "css",
+  "jso"
 ));
 
 gulp.task("start", gulp.series("build", "server"));

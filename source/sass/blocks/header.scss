@@ -7,6 +7,59 @@
   }
 }
 
+.header__no-js {
+  .header__button {
+    display: none;
+  }
+}
+
+.header__menu {
+  .header__list-item {
+    border-bottom: 1px solid $light-grey;
+    padding-left: 75px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    &--search {
+      position: relative;
+
+      svg {
+        position: absolute;
+        top: 27px;
+        left: 40px;
+        fill: $black;
+        opacity: 0.3;
+      }
+    }
+
+    &--basket {
+      position: relative;
+
+      svg {
+        position: absolute;
+        top: 27px;
+        left: 40px;
+        fill: $black;
+        opacity: 0.3;
+      }
+    }
+
+    &--new {
+      display: none;
+    }
+
+    &--sale {
+      display: none;
+    }
+  }
+
+  &--close {
+    .header__list-item {
+      display: none;
+    }
+  }
+}
+
 .header__logo {
   background-color: $white;
   padding-top: 22px;
@@ -30,23 +83,6 @@
 }
 
 .header__button {
-  display: none;
-}
-
-.header__button-open {
-  width: 21px;
-  height: 21px;
-  position: absolute;
-  top: 28px;
-  right: 31px;
-  border: none;
-  background-color: $white;
-  background-image: url("../img/icon-menu-open.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.header__button-close {
   width: 21px;
   height: 21px;
   position: absolute;
@@ -57,6 +93,10 @@
   background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  &--open {
+    background-image: url("../img/icon-menu-open.svg");
+  }
 }
 
 .header__menu-list {
@@ -64,48 +104,44 @@
   list-style: none;
 }
 
-.header__list-item {
-  border-bottom: 1px solid $light-grey;
-  padding-left: 75px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-
-  &--search {
-    position: relative;
-
-    svg {
-      position: absolute;
-      top: 27px;
-      left: 40px;
-      fill: $black;
-      opacity: 0.3;
-    }
-  }
-
-  &--basket {
-    position: relative;
-
-    svg {
-      position: absolute;
-      top: 27px;
-      left: 40px;
-      fill: $black;
-      opacity: 0.3;
-    }
-  }
-
-  &--new {
-    display: none;
-  }
-
-  &--sale {
-    display: none;
-  }
-}
-
-.header__list-item-close {
-  display: none;
-}
+//.header__list-item {
+//  border-bottom: 1px solid $light-grey;
+//  padding-left: 75px;
+//  padding-top: 25px;
+//  padding-bottom: 25px;
+//
+//  &--search {
+//    position: relative;
+//
+//    svg {
+//      position: absolute;
+//      top: 27px;
+//      left: 40px;
+//      fill: $black;
+//      opacity: 0.3;
+//    }
+//  }
+//
+//  &--basket {
+//    position: relative;
+//
+//    svg {
+//      position: absolute;
+//      top: 27px;
+//      left: 40px;
+//      fill: $black;
+//      opacity: 0.3;
+//    }
+//  }
+//
+//  &--new {
+//    display: none;
+//  }
+//
+//  &--sale {
+//    display: none;
+//  }
+//}
 
 .header__list-link {
   @include textsize(17px, 24px);
@@ -159,71 +195,73 @@
     order: 0;
   }
 
-  .header__list-item {
-    display: block;
-    border: none;
-    padding-top: 49px;
-    padding-bottom: 28px;
-
-    &--catalog {
-      width: 168px;
-      order: 3;
-      padding-top: 16px;
-      padding-bottom: 10px;
-      padding-right: 10px;
-      padding-left: 0;
-      z-index: 200;
-    }
-
-    &--order {
-      width: 192px;
-      order: 4;
-      padding-top: 16px;
-      padding-bottom: 10px;
-      padding-right: 35px;
-      padding-left: 0;
-      z-index: 200;
-    }
-
-    &--search {
-      margin: 0;
-      width: 84px;
-      order: 1;
-      padding-top: 34px;
+  .header__menu {
+    .header__list-item {
+      display: block;
+      border: none;
+      padding-top: 49px;
       padding-bottom: 28px;
-      padding-right: 30px;
-      padding-left: 34px;
-      border-right: 1px solid $light-grey;
-      border-left: 1px solid $light-grey;
 
-      svg {
-        top: 35px;
-        left: 35px;
+      &--catalog {
+        width: 168px;
+        order: 3;
+        padding-top: 16px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 0;
+        z-index: 200;
       }
-    }
 
-    &--basket {
-      @include textsize(17px, 24px);
-      width: 264px;
-      padding-top: 31px;
-      padding-bottom: 35px;
-      padding-right: 0;
-      padding-left: 82px;
-      order: 2;
-
-      svg {
-        top: 34px;
-        left: 32px;
-        height: 20px;
+      &--order {
+        width: 192px;
+        order: 4;
+        padding-top: 16px;
+        padding-bottom: 10px;
+        padding-right: 35px;
+        padding-left: 0;
+        z-index: 200;
       }
-    }
 
-    &--new {
-      display: none;
-    }
+      &--search {
+        margin: 0;
+        width: 84px;
+        order: 1;
+        padding-top: 34px;
+        padding-bottom: 28px;
+        padding-right: 30px;
+        padding-left: 34px;
+        border-right: 1px solid $light-grey;
+        border-left: 1px solid $light-grey;
 
-    &--sale {
-      display: none;
+        svg {
+          top: 35px;
+          left: 35px;
+        }
+      }
+
+      &--basket {
+        @include textsize(17px, 24px);
+        width: 264px;
+        padding-top: 31px;
+        padding-bottom: 35px;
+        padding-right: 0;
+        padding-left: 82px;
+        order: 2;
+
+        svg {
+          top: 34px;
+          left: 32px;
+          height: 20px;
+        }
+      }
+
+      &--new {
+        display: none;
+      }
+
+      &--sale {
+        display: none;
+      }
     }
   }
 
@@ -260,80 +298,82 @@
     order: 2;
   }
 
-  .header__list-item {
-    border: none;
+  .header__menu {
+    .header__list-item {
+      border: none;
 
-    &--catalog {
-      width: 235px;
-      padding-top: 31px;
-      padding-right: 35px;
-      padding-bottom: 34px;
-      padding-left: 51px;
-      order: 0;
-    }
-
-    &--order {
-      width: 235px;
-      padding-top: 31px;
-      padding-right: 35px;
-      padding-left: 35px;
-      padding-bottom: 34px;
-      border-left: 1px solid $light-grey;
-      order: 1;
-    }
-
-    &--search {
-      order: 3;
-      padding-top: 36px;
-      padding-right: 30px;
-      padding-left: 32px;
-      padding-bottom: 28px;
-      border-right: 1px solid $light-grey;
-      border-left: 1px solid $light-grey;
-
-      svg {
-        top: 36px;
-        left: 31px;
+      &--catalog {
+        width: 235px;
+        padding-top: 31px;
+        padding-right: 35px;
+        padding-bottom: 34px;
+        padding-left: 51px;
+        order: 0;
       }
-    }
 
-    &--basket {
-      width: 265px;
-      padding-top: 29px;
-      padding-right: 0;
-      padding-left: 82px;
-      padding-bottom: 32px;
-      order: 4;
-
-      svg {
-        top: 32px;
-        left: 31px;
+      &--order {
+        width: 235px;
+        padding-top: 31px;
+        padding-right: 35px;
+        padding-left: 35px;
+        padding-bottom: 34px;
+        border-left: 1px solid $light-grey;
+        order: 1;
       }
-    }
 
-    &--new {
-      display: block;
-      color: $black;
-      width: 235px;
-      padding-top: 17px;
-      padding-right: 5px;
-      padding-left: 51px;
-      padding-bottom: 22px;
-      order: 5;
-      z-index: 200;
-    }
+      &--search {
+        order: 3;
+        padding-top: 36px;
+        padding-right: 30px;
+        padding-left: 32px;
+        padding-bottom: 28px;
+        border-right: 1px solid $light-grey;
+        border-left: 1px solid $light-grey;
 
-    &--sale {
-      @include textsize(15px, 24px);
-      display: block;
-      width: 235px;
-      color: $black;
-      padding-top: 17px;
-      padding-right: 30px;
-      padding-left: 35px;
-      padding-bottom: 22px;
-      order: 6;
-      z-index: 200;
+        svg {
+          top: 36px;
+          left: 31px;
+        }
+      }
+
+      &--basket {
+        width: 265px;
+        padding-top: 29px;
+        padding-right: 0;
+        padding-left: 82px;
+        padding-bottom: 32px;
+        order: 4;
+
+        svg {
+          top: 32px;
+          left: 31px;
+        }
+      }
+
+      &--new {
+        display: block;
+        color: $black;
+        width: 235px;
+        padding-top: 17px;
+        padding-right: 5px;
+        padding-left: 51px;
+        padding-bottom: 22px;
+        order: 5;
+        z-index: 200;
+      }
+
+      &--sale {
+        @include textsize(15px, 24px);
+        display: block;
+        width: 235px;
+        color: $black;
+        padding-top: 17px;
+        padding-right: 30px;
+        padding-left: 35px;
+        padding-bottom: 22px;
+        order: 6;
+        z-index: 200;
+      }
     }
   }
 

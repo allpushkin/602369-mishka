@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
     <svg style="display: none;">
@@ -104,7 +104,7 @@
         <path d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
       </symbol>
     </svg>
-    <header class="header">
+    <header class="header header__no-js">
       <div class="header__wrapper">
         <button type="button" class="header__button">
           <span class="visually-hidden">Закрыть</span>
@@ -151,7 +151,7 @@
       <section class="product-group">
         <div class="product-group__wrapper">
           <div class="product-group__item">
-            <a href="#" class="product-group__link">
+            <a href="catalog.html" class="product-group__link">
               <span class="product-group__link-text">Предметы интерьера</span>
               <svg class="product-group__image" width="40.219px" height="62.411px">
                 <use xlink:href="#icon-interior"></use>
@@ -159,7 +159,7 @@
             </a>
           </div>
           <div class="product-group__item product-group__item--dark-green">
-            <a href="#" class="product-group__link product-group__link--dark-green">
+            <a href="catalog.html" class="product-group__link product-group__link--dark-green">
               <span class="product-group__link-text product-group__link-text--toy">Детские игрушки</span>
               <svg class="product-group__image product-group__image--toy" width="60px" height="59.62px">
                 <use xlink:href="#icon-toy"></use>
@@ -270,7 +270,7 @@
               <img src="img/icon-right-arrow.svg" class="review__btn-image" alt="стрелка вправо">
             </button>
           </div>
-          <a href="#" class="button review__button">Написать</a>
+          <a href="review.html" class="button review__button">Написать</a>
         </div>
       </section>
       <section class="contacts">
@@ -289,7 +289,7 @@
           <div class="contacts__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1309.4668354557912!2d30.32168780960884!3d59.93864715578773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1541105306430"></iframe>
           </div>
-          <a href="#" class="button contacts__button">Напишите нам</a>
+          <a href="feedback.html" class="button contacts__button">Напишите нам</a>
         </div>
       </section>
     </main>
@@ -369,6 +369,8 @@
           <button type="submit" class="modal__button button">Добавить</button>
         </form>
       </div>
+      <div class="modal__background"></div>
     </section>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>
