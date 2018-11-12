@@ -1,10 +1,10 @@
 .form-block {
   width: 100%;
   background-color: $white;
+}
 
-  &--wrapper {
-    width: 100%;
-  }
+.form-block__wrapper {
+  width: 100%;
 }
 
 .form-block__text-block {

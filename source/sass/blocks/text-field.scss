@@ -3,10 +3,10 @@
   border: none;
   padding-bottom: 6px;
   background-color: $white;
+}
 
-  &__wrapper {
-    padding-left: 13px;
-  }
+.text-field__wrapper {
+  padding-left: 13px;
 }
 
 .text-field__tittle {
@@ -119,30 +119,28 @@
 }
 
 @media (min-width: $tablet-width) {
-  .text-field {
-    &__wrapper {
-      @include flex;
-      padding-top: 44px;
-      padding-bottom: 20px;
-      padding-left: 50px;
-      align-items: flex-start;
-      justify-content: flex-start;
+  .text-field__wrapper {
+    @include flex;
+    padding-top: 44px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    align-items: flex-start;
+    justify-content: flex-start;
 
-      &--phone {
-        padding-top: 45px;
-        padding-bottom: 3px;
-      }
-
-      &--e-mail {
-        padding-top: 10px;
-        padding-bottom: 33px;
-      }
+    &--phone {
+      padding-top: 45px;
+      padding-bottom: 3px;
     }
 
-    &--phone,
     &--e-mail {
-      background-color: $block-grey;
+      padding-top: 10px;
+      padding-bottom: 33px;
     }
+  }
+
+  &--phone,
+  &--e-mail {
+    background-color: $block-grey;
   }
 
   .text-field__tittle {

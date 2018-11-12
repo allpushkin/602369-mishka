@@ -1,14 +1,14 @@
 .information-block {
   @include wrapper;
   background-color: $white;
+}
 
-  &__wrapper {
-    @include flex;
-    width: 260px;
-    flex-direction: column;
-    padding-top: 11px;
-    padding-bottom: 58px;
-  }
+.information-block__wrapper {
+  @include flex;
+  width: 260px;
+  flex-direction: column;
+  padding-top: 11px;
+  padding-bottom: 58px;
 }
 
 .information-block__wrapper:hover .information-block__tittle,
@@ -169,17 +169,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .information-block {
-    &__wrapper {
-      width: 1049px;
-      align-items: flex-end;
-      flex-wrap: wrap;
-      position: relative;
-      padding-left: 0;
-      padding-right: 0;
-      padding-top: 47px;
-      padding-bottom: 105px;
-    }
+  .information-block__wrapper {
+    width: 1049px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 47px;
+    padding-bottom: 105px;
   }
 
   .information-block__tittle {

@@ -2,12 +2,12 @@
   @include wrapper;
   @include reset-position;
   border: none;
+}
 
-  &__wrapper {
-    padding-top: 6px;
-    padding-left: 29px;
-    padding-bottom: 17px;
-  }
+.radiobutton__wrapper {
+  padding-top: 6px;
+  padding-left: 29px;
+  padding-bottom: 17px;
 }
 
 .radiobutton__tittle {
@@ -97,15 +97,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .radiobutton {
-    &__wrapper {
-      @include flex;
-      align-items: flex-start;
-      padding: 0;
-      padding-top: 47px;
-      padding-left: 51px;
-      padding-bottom: 35px;
-    }
+  .radiobutton__wrapper {
+    @include flex;
+    align-items: flex-start;
+    padding: 0;
+    padding-top: 47px;
+    padding-left: 51px;
+    padding-bottom: 35px;
   }
 
   .radiobutton__tittle {

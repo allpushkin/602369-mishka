@@ -1,10 +1,13 @@
 .footer {
   @include wrapper;
   background-color: $block-grey;
+}
 
-  &__wrapper {
-    padding: 0 30px;
-  }
+.footer__wrapper {
+  padding-top: 0;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 0;
 }
 
 .footer__logo {
@@ -88,12 +91,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer {
-    &__wrapper {
-      @include flex;
-      padding-top: 31px;
-      padding-bottom: 32px;
-    }
+  .footer__wrapper {
+    @include flex;
+    padding-top: 31px;
+    padding-bottom: 32px;
   }
 
   .footer__logo {
@@ -142,10 +143,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .footer {
-    &__wrapper {
-      padding-left: 103px;
-    }
+  .footer__wrapper {
+    padding-left: 103px;
   }
 
   .footer__logo {

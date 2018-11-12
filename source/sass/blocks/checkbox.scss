@@ -2,12 +2,12 @@
   @include wrapper;
   @include reset-position;
   border: none;
+}
 
-  &__wrapper {
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 4px;
-  }
+.checkbox__wrapper {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 4px;
 }
 
 .checkbox__tittle {
@@ -81,15 +81,15 @@
   .checkbox {
     width: 100%;
     background-color: $block-grey;
+  }
 
-    &__wrapper {
-      @include flex;
-      width: $tablet-width;
-      align-items: flex-start;
-      padding-top: 50px;
-      padding-left: 51px;
-      padding-bottom: 26px;
-    }
+  .checkbox__wrapper {
+    @include flex;
+    width: $tablet-width;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-left: 51px;
+    padding-bottom: 26px;
   }
 
   .checkbox__tittle {

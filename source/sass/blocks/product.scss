@@ -1,35 +1,31 @@
 .product {
   @include wrapper;
   background-color: $white;
+}
 
-  &__wrapper {
-    padding-top: 30px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 20px;
-  }
+.product__wrapper {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
-  .product {
-    &__wrapper {
-      padding-top: 80px;
-      padding-right: 50px;
-      padding-left: 51px;
-      padding-bottom: 10px;
-    }
+  .product__wrapper {
+    padding-top: 80px;
+    padding-right: 50px;
+    padding-left: 51px;
+    padding-bottom: 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .product {
-    &__wrapper {
-      @include flex;
-      align-items: flex-start;
-      padding-top: 130px;
-      padding-right: 50px;
-      padding-left: 100px;
-      padding-bottom: 10px;
-    }
+  .product__wrapper {
+    @include flex;
+    align-items: flex-start;
+    padding-top: 130px;
+    padding-right: 50px;
+    padding-left: 100px;
+    padding-bottom: 10px;
   }
 }

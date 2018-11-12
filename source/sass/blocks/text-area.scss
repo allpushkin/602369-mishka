@@ -1,10 +1,10 @@
 .text-area {
   @include wrapper;
   border: none;
+}
 
-  &__wrapper {
-    padding-left: 26px;
-  }
+.text-area__wrapper {
+  padding-left: 26px;
 }
 
 .text-area__tittle {
@@ -75,14 +75,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .text-area {
-    &__wrapper {
-      @include flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      padding-top: 44px;
-      padding-left: 48px;
-    }
+  .text-area__wrapper {
+    @include flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 44px;
+    padding-left: 48px;
   }
 
   .text-area__tittle {
@@ -133,11 +131,11 @@
 @media (min-width: $desktop-width) {
   .text-area {
     padding: 0;
+  }
 
-    &__wrapper {
-      padding-top: 44px;
-      padding-left: 100px;
-    }
+  .text-area__wrapper {
+    padding-top: 44px;
+    padding-left: 100px;
   }
 
   .text-area__tittle {

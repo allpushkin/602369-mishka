@@ -1,13 +1,13 @@
 .pluses {
   @include wrapper;
   background-color: #ffffff;
+}
 
-  &__wrapper {
-    padding-top: 18px;
-    padding-right: 30px;
-    padding-left: 28px;
-    padding-bottom: 30px;
-  }
+.pluses__wrapper {
+  padding-top: 18px;
+  padding-right: 30px;
+  padding-left: 28px;
+  padding-bottom: 30px;
 }
 
 .pluses__tittle {
@@ -199,13 +199,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .pluses {
-    &__wrapper {
-      padding-top: 87px;
-      padding-left: 272px;
-      padding-bottom: 33px;
-      padding-right: 360px;
-    }
+  .pluses__wrapper {
+    padding-top: 87px;
+    padding-left: 272px;
+    padding-bottom: 33px;
+    padding-right: 360px;
   }
 
   .pluses__tittle {

@@ -1,10 +1,10 @@
 .header {
   @include wrapper;
   background-color: $white;
+}
 
-  &__wrapper {
-    position: relative;
-  }
+.header__wrapper {
+  position: relative;
 }
 
 .header__no-js {

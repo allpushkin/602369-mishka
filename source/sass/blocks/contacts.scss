@@ -96,12 +96,12 @@
 @media (min-width: $tablet-width) {
   .contacts {
     padding-bottom: 0;
+  }
 
-    &__wrapper {
-      padding-top: 16px;
-      padding-left: 0;
-      padding-bottom: 57px;
-    }
+  .contacts__wrapper {
+    padding-top: 16px;
+    padding-left: 0;
+    padding-bottom: 57px;
   }
 
   .contacts__tittle {
@@ -179,16 +179,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contacts {
-    &__wrapper {
-      @include flex;
-      flex-direction: column;
-      align-items: flex-start;
-      position: relative;
-      padding-top: 93px;
-      padding-bottom: 105px;
-      padding-left: 224px;
-    }
+  .contacts__wrapper {
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 93px;
+    padding-bottom: 105px;
+    padding-left: 224px;
   }
 
   .contacts__tittle {
