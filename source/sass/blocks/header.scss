@@ -302,14 +302,16 @@
         order: 3;
         border-right: 1px solid $light-grey;
         border-left: 1px solid $light-grey;
+        height: 90px;
         padding-top: 36px;
         padding-right: 30px;
         padding-left: 32px;
         padding-bottom: 28px;
 
         svg {
-          top: 36px;
+          top: 50%;
           left: 31px;
+          transform: translateY(-50%);
         }
       }
 
