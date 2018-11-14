@@ -45,7 +45,6 @@ gulp.task("webp", function () {
 gulp.task("jso", function() {
   return gulp.src("build/js/**/*.js")
     .pipe(jso())
-    .pipe(rename("script.min.js"))
     .pipe(gulp.dest('build/js'))
 });
 
