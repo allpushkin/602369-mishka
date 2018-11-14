@@ -4,7 +4,7 @@
 }
 
 .product__wrapper {
-  padding-top: 30px;
+  padding-top: 31px;
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 20px;
@@ -23,9 +23,10 @@
   .product__wrapper {
     @include flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     padding-top: 130px;
     padding-right: 50px;
-    padding-left: 100px;
-    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-bottom: 0;
   }
 }

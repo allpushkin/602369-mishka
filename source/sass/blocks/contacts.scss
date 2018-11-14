@@ -53,6 +53,7 @@
 
 .contacts__table-link {
   border-bottom: 1px solid $radio-green;
+  padding-bottom: 3px;
 
   &:hover,
   &:focus {
@@ -120,13 +121,13 @@
       background-position: center;
       position: absolute;
       top: -15px;
-      right: 8px;
+      right: 54px;
     }
   }
 
   .contacts__table {
     @include textsize(17px, 30px);
-    width: 668px;
+    width: 690px;
     padding-left: 50px;
     margin: 0;
     margin-bottom: 55px;
@@ -143,20 +144,20 @@
 
     &:first-child {
       padding-bottom: 28px;
-      margin-right: 48px;
+      margin-right: 28px;
     }
   }
 
   .contacts__table-item {
     vertical-align: top;
-    width: 78px;
+    width: 77px;
 
     &--e-mail {
       width: 145px;
     }
 
     &--address {
-      width: 196px;
+      width: 225px;
     }
   }
 
@@ -186,7 +187,7 @@
     position: relative;
     padding-top: 93px;
     padding-bottom: 105px;
-    padding-left: 224px;
+    padding-left: 175px;
   }
 
   .contacts__tittle {
@@ -209,6 +210,12 @@
     }
   }
 
+  .contacts__table-item {
+    &--address {
+      width: 230px;
+    }
+  }
+
   .contacts__table-link {
     padding-bottom: 3px;
   }
@@ -222,7 +229,7 @@
     order: 3;
     position: absolute;
     top: 23px;
-    right: 100px;
+    right: 50px;
     width: 525px;
     background-image: url("../img/map-desktop@1x.jpg");
 

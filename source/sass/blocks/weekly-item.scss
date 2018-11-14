@@ -74,6 +74,10 @@
   margin-bottom: 26px;
 }
 
+.weekly-item__button {
+  font-weight: bold;
+}
+
 @media (min-width: $tablet-width) {
   .weekly-item__wrapper {
     @include flex;
@@ -162,7 +166,7 @@
 @media (min-width: $desktop-width) {
   .weekly-item__wrapper {
     padding-top: 107px;
-    padding-left: 133px;
+    padding-left: 84px;
 
     &::after {
       bottom: -5px;
@@ -202,7 +206,7 @@
     display: block;
     max-width: 525px;
     top: 55px;
-    right: 99px;
+    right: 48px;
   }
 
   .weekly-item__price-block {

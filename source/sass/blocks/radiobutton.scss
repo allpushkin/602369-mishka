@@ -1,13 +1,13 @@
 .radiobutton {
   @include wrapper;
   @include reset-position;
-  border: none;
 }
 
 .radiobutton__wrapper {
-  padding-top: 6px;
+  border: none;
+  padding-top: 0;
   padding-left: 29px;
-  padding-bottom: 17px;
+  padding-bottom: 3px;
 }
 
 .radiobutton__tittle {
@@ -162,7 +162,7 @@
 @media (min-width: $desktop-width) {
   .radiobutton__wrapper {
     padding-top: 46px;
-    padding-left: 103px;
+    padding-left: 54px;
   }
 
   .radiobutton__tittle {

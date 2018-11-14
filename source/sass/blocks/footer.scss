@@ -144,7 +144,8 @@
 
 @media (min-width: $desktop-width) {
   .footer__wrapper {
-    padding-left: 103px;
+    padding-left: 53px;
+    padding-right: 0;
   }
 
   .footer__logo {
@@ -153,13 +154,13 @@
   }
 
   .footer__social {
-    margin-left: 98px;
-    margin-right: 63px;
+    margin-left: 100px;
+    margin-right: 21px;
   }
 
   .footer__copyright {
-    margin-left: 100px;
-    margin-right: 0;
+    margin-left: 145px;
+    margin-right: 23px;
   }
 
   .footer__buttons {

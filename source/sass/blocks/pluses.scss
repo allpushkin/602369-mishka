@@ -26,7 +26,7 @@
 .pluses__item {
   @include textsize(17px, 20px);
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
 
   &--eco {
     margin-right: 80px;
@@ -127,37 +127,36 @@
     @include reset-position;
     @include textsize(20px, 22px);
     display: block;
-    width: 255px;
+    width: 50%;
     margin-bottom: 57px;
 
     &--eco {
       order: 0;
-      padding-right: 25px;
-      margin-right: 79px;
+      padding-right: 105px;
     }
 
     &--style {
       order: 2;
-      margin-right: 79px;
+      padding-right: 100px;
     }
 
     &--likes {
       order: 4;
-      padding-right: 20px;
-      margin-right: 79px;
+      padding-right: 100px;
     }
 
     &--make {
       order: 1;
+      padding-right: 70px;
     }
 
     &--production {
-      width: 300px;
       order: 3;
     }
 
     &--gift {
       order: 5;
+      padding-right: 50px;
     }
   }
 
@@ -167,14 +166,14 @@
     }
 
     &--style {
-      margin-right: 80px;
+      margin-right: 140px;
       margin-left: 1px;
       margin-bottom: 21px;
     }
 
     &--likes {
       margin-top: 7px;
-      margin-right: 75px;
+      margin-right: 150px;
       margin-left: 8px;
       margin-bottom: 16px;
     }
@@ -182,17 +181,18 @@
     &--make {
       margin-top: 5px;
       margin-bottom: 13px;
+      margin-right: 210px;
     }
 
     &--production {
       margin-top: 4px;
-      margin-right: 130px;
+      margin-right: 165px;
       margin-bottom: 22px;
     }
 
     &--gift {
       margin-top: 2px;
-      margin-right: 80px;
+      margin-right: 160px;
       margin-bottom: 15px;
     }
   }
@@ -201,7 +201,7 @@
 @media (min-width: $desktop-width) {
   .pluses__wrapper {
     padding-top: 87px;
-    padding-left: 272px;
+    padding-left: 223px;
     padding-bottom: 33px;
     padding-right: 360px;
   }
@@ -216,43 +216,71 @@
   }
 
   .pluses__item {
-    width: 255px;
+    //width: 255px;
+    width: 50%;
     margin-bottom: 57px;
 
     &--eco {
       order: 0;
-      padding-right: 25px;
-      margin-right: 95px;
+      padding-right: 120px;
+      //margin-right: 95px;
+      margin-right: 0;
     }
 
     &--style {
       order: 2;
-      margin-right: 96px;
+      margin-right: 0;
+      padding-right: 100px;
+      //margin-right: 96px;
     }
 
     &--likes {
       order: 4;
-      padding-right: 20px;
-      margin-right: 95px;
+      padding-right: 110px;
+      margin-right: 0;
+      //margin-right: 95px;
     }
 
     &--make {
       order: 1;
+      margin-right: 0;
+      padding-right: 100px;
     }
 
     &--production {
-      width: 300px;
+      //width: 300px;
       order: 3;
+      margin-right: 0;
+      padding-left: 2px;
     }
 
     &--gift {
       order: 5;
+      margin-right: 0;
+      padding-right: 100px;
+      padding-left: 2px;
     }
   }
 
   .pluses__image {
+    &--style {
+      margin-right: 133px;
+    }
+
+    &--likes {
+      margin-right: 145px;
+    }
+
+    &--make {
+      margin-right: 225px;
+    }
+
     &--production {
-      margin-right: 150px;
+      margin-right: 180px;
+    }
+
+    &--gift {
+      margin-right: 180px;
     }
   }
 }
