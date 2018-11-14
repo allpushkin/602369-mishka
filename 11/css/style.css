@@ -618,13 +618,16 @@ h3 {
               order: 3;
       border-right: 1px solid #ececec;
       border-left: 1px solid #ececec;
+      height: 90px;
       padding-top: 36px;
       padding-right: 30px;
       padding-left: 32px;
       padding-bottom: 28px; }
       .header__menu .header__list-item--search svg {
-        top: 36px;
-        left: 31px; }
+        top: 50%;
+        left: 31px;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
     .header__menu .header__list-item--basket {
       width: 265px;
       padding-top: 29px;
