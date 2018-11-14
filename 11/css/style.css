@@ -380,6 +380,7 @@ h3 {
   display: none; }
 
 .header__menu .header__list-item {
+  display: block;
   border-bottom: 1px solid #ececec;
   padding-left: 75px;
   padding-top: 25px;
@@ -615,12 +616,12 @@ h3 {
       -webkit-box-ordinal-group: 4;
           -ms-flex-order: 3;
               order: 3;
+      border-right: 1px solid #ececec;
+      border-left: 1px solid #ececec;
       padding-top: 36px;
       padding-right: 30px;
       padding-left: 32px;
-      padding-bottom: 28px;
-      border-right: 1px solid #ececec;
-      border-left: 1px solid #ececec; }
+      padding-bottom: 28px; }
       .header__menu .header__list-item--search svg {
         top: 36px;
         left: 31px; }
@@ -1366,7 +1367,7 @@ h3 {
   .pluses__image--make {
     margin-right: 225px; }
   .pluses__image--production {
-    margin-right: 180px; }
+    margin-right: 200px; }
   .pluses__image--gift {
     margin-right: 180px; } }
 
@@ -2230,6 +2231,7 @@ h3 {
   line-height: 24px;
   margin: 0;
   padding: 0;
+  width: 100%;
   margin-bottom: 5px; }
 
 .product-item__text {
