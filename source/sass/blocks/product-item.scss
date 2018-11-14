@@ -42,6 +42,7 @@
 .product-item__tittle {
   @include textsize(17px, 24px);
   @include reset-position;
+  width: 100%;
   margin-bottom: 5px;
 }
 

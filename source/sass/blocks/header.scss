@@ -15,6 +15,7 @@
 
 .header__menu {
   .header__list-item {
+    display: block;
     border-bottom: 1px solid $light-grey;
     padding-left: 75px;
     padding-top: 25px;
@@ -299,12 +300,12 @@
 
       &--search {
         order: 3;
+        border-right: 1px solid $light-grey;
+        border-left: 1px solid $light-grey;
         padding-top: 36px;
         padding-right: 30px;
         padding-left: 32px;
         padding-bottom: 28px;
-        border-right: 1px solid $light-grey;
-        border-left: 1px solid $light-grey;
 
         svg {
           top: 36px;
