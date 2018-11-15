@@ -42,6 +42,7 @@
 .product-item__tittle {
   @include textsize(17px, 24px);
   @include reset-position;
+  width: 100%;
   margin-bottom: 5px;
 }
 
@@ -73,6 +74,10 @@
 
 .product-item__button-basket {
   fill: $black-basket;
+  background-color: $white;
+  border: none;
+  box-shadow: none;
+  display: block;
 
   &:focus,
   &:hover {
@@ -164,14 +169,14 @@
   .product-item {
     width: 317px;
     flex-direction: column;
-    margin-bottom: 0;
-    margin-right: 50px;
+    margin-right: 49px;
+    margin-bottom: 10px;
 
-    &:first-child {
-      margin-right: 49px;
+    &:nth-child(2n) {
+      margin-right: 50px;
     }
 
-    &:last-child {
+    &:nth-child(3n) {
       margin-right: 0;
     }
   }

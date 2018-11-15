@@ -1,7 +1,7 @@
 .product-group {
   @include wrapper;
   width: 100%;
-  background-color: $white;
+  background-color: $bg-info;
 }
 
 .product-group__item {
@@ -90,25 +90,23 @@
 }
 
 @media (min-width: $tablet-width) {
-  .product-group {
-    &__wrapper {
-      @include tablet-desktop-padding;
-      @include flex;
-      width: $tablet-width;
-      position: relative;
+  .product-group__wrapper {
+    @include tablet-desktop-padding;
+    @include flex;
+    width: $tablet-width;
+    position: relative;
 
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 768px;
-        height: 34px;
-        background-image: url("../img/bg-zigzag-fill.svg");
-        background-position: bottom center;
-        background-repeat: no-repeat;
-        z-index: 1500;
-      }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 768px;
+      height: 34px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      z-index: 1500;
     }
   }
 
@@ -153,17 +151,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .product-group {
-    &__wrapper {
-      width: $desktop-width;
-      padding-right: 99px;
-      padding-left: 101px;
+  .product-group__wrapper {
+    width: $desktop-width;
+    padding-right: 48px;
+    padding-left: 52px;
 
-      &::after {
-        bottom: -2px;
-        left: 15px;
-        width: 1150px;
-      }
+    &::after {
+      bottom: -2px;
+      left: 15px;
+      width: 1150px;
     }
   }
 

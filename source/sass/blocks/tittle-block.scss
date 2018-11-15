@@ -1,14 +1,14 @@
 .tittle-block {
   @include wrapper;
   background-color: $block-grey;
+}
 
-  &__wrapper {
-    padding-right: 30px;
-    padding-left: 27px;
-    padding-top: 52px;
-    padding-bottom: 58px;
-    text-align: center;
-  }
+.tittle-block__wrapper {
+  padding-right: 30px;
+  padding-left: 27px;
+  padding-top: 52px;
+  padding-bottom: 58px;
+  text-align: center;
 }
 
 .tittle-block__tittle {
@@ -16,28 +16,26 @@
 }
 
 @media (min-width: $tablet-width) {
-  .tittle-block {
-    &__wrapper {
-      padding-right: 186px;
-      padding-left: 187px;
-      padding-top: 66px;
-      padding-bottom: 50px;
-      margin-top: -52px;
-      border-top: 1px solid $light-grey;
-      position: relative;
+  .tittle-block__wrapper {
+    padding-right: 186px;
+    padding-left: 187px;
+    padding-top: 66px;
+    padding-bottom: 50px;
+    //margin-top: -52px;
+    border-top: 1px solid $light-grey;
+    position: relative;
 
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -13px;
-        left: 0;
-        width: $tablet-width;
-        height: 34px;
-        background-image: url("../img/bg-zigzag-fill.svg");
-        background-position: bottom left;
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -13px;
+      left: 0;
+      width: $tablet-width;
+      height: 34px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: bottom left;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   }
 
@@ -47,18 +45,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .tittle-block {
-    &__wrapper {
-      padding-left: 191px;
-      padding-top: 57px;
-      padding-bottom: 67px;
-      margin-top: -64px;
+  .tittle-block__wrapper {
+    padding-left: 191px;
+    padding-top: 57px;
+    padding-bottom: 67px;
+    //margin-top: -64px;
 
-      &::after {
-        bottom: -20px;
-        left: 50px;
-        width: 1150px;
-      }
+    &::after {
+      bottom: -20px;
+      left: 0;
+      width: 1150px;
     }
   }
 

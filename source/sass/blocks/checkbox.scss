@@ -1,13 +1,13 @@
 .checkbox {
   @include wrapper;
   @include reset-position;
-  border: none;
+}
 
-  &__wrapper {
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 4px;
-  }
+.checkbox__wrapper {
+  border: none;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 17px;
 }
 
 .checkbox__tittle {
@@ -36,6 +36,10 @@
   @include flex;
   align-items: center;
   margin-bottom: 22px;
+
+  &--orange {
+    margin-bottom: 0;
+  }
 }
 
 .checkbox__block input[type="checkbox"] + .checkbox__field {
@@ -81,15 +85,15 @@
   .checkbox {
     width: 100%;
     background-color: $block-grey;
+  }
 
-    &__wrapper {
-      @include flex;
-      width: $tablet-width;
-      align-items: flex-start;
-      padding-top: 50px;
-      padding-left: 51px;
-      padding-bottom: 26px;
-    }
+  .checkbox__wrapper {
+    @include flex;
+    width: $tablet-width;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-left: 51px;
+    padding-bottom: 26px;
   }
 
   .checkbox__tittle {
@@ -113,17 +117,24 @@
 
   .checkbox__block {
     margin-bottom: 24px;
+    width: 50%;
 
     &--white {
-      margin-right: 116px;
+      //margin-right: 116px;
     }
 
     &--tiffany {
-      margin-right: 64px;
+      //margin-right: 64px;
     }
 
     &--pink {
-      margin-right: 93px;
+      //margin-right: 93px;
+    }
+
+    &--grey,
+    &--black,
+    &--orange {
+      padding-left: 8px;
     }
   }
 
@@ -146,6 +157,7 @@
     @include textsize(19px, 18px);
     margin-right: 0;
     margin-left: 27px;
+    padding-bottom: 4px;
   }
 }
 
@@ -154,7 +166,8 @@
     width: $desktop-width;
     padding-top: 49px;
     padding-bottom: 25px;
-    padding-left: 100px;
+    padding-left: 50px;
+    padding-right: 0;
   }
 
   .checkbox__tittle {
@@ -164,40 +177,54 @@
   }
 
   .checkbox__container {
-    width: 730px;
+    width: 799px;
+    justify-content: flex-start;
   }
 
   .checkbox__block-list {
     @include flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .checkbox__block {
+    width: 33%;
     margin-bottom: 24px;
+    padding: 0;
 
-    &--white {
-      margin-right: 116px;
-    }
+    //&--grey,
+    //&--pink {
+    //  padding-left: 19px;
+    //}
+    //
+    //&--tiffany,
+    //&--orange {
+    //  padding-left: 39px;
+    //}
 
-    &--grey {
-      margin-right: 118px;
-    }
-
-    &--tiffany {
-      margin-right: 0;
-    }
-
-    &--black {
-      margin-right: 102px;
-    }
-
-    &--pink {
-      margin-right: 95px;
-    }
-
-    &--orange {
-      margin-right: 0;
-    }
+    //&--white {
+    //  //margin-right: 116px;
+    //}
+    //
+    //&--grey {
+    //  //margin-right: 118px;
+    //}
+    //
+    //&--tiffany {
+    //  //margin-right: 0;
+    //}
+    //
+    //&--black {
+    //  //margin-right: 102px;
+    //}
+    //
+    //&--pink {
+    //  //margin-right: 95px;
+    //}
+    //
+    //&--orange {
+    //  //margin-right: 0;
+    //}
   }
 
   .checkbox__text {

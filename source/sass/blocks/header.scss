@@ -1,10 +1,10 @@
 .header {
   @include wrapper;
   background-color: $white;
+}
 
-  &__wrapper {
-    position: relative;
-  }
+.header__wrapper {
+  position: relative;
 }
 
 .header__no-js {
@@ -15,6 +15,7 @@
 
 .header__menu {
   .header__list-item {
+    display: block;
     border-bottom: 1px solid $light-grey;
     padding-left: 75px;
     padding-top: 25px;
@@ -131,6 +132,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .header__wrapper {
+    padding-left: 50px;
+  }
+
   .header__button,
   .header__button-open,
   .header__button-close {
@@ -140,12 +145,13 @@
   .header__menu-list {
     @include flex;
     flex-wrap: wrap;
+    position: relative;
   }
 
   .header__logo {
     width: 320px;
     padding-right: 159px;
-    padding-top: 17px;
+    padding-top: 20px;
     padding-bottom: 12px;
     padding-left: 0;
     border-bottom: none;
@@ -169,6 +175,9 @@
         padding-right: 10px;
         padding-left: 0;
         z-index: 200;
+        position: absolute;
+        bottom: -52px;
+        left: 0;
       }
 
       &--order {
@@ -179,6 +188,9 @@
         padding-right: 35px;
         padding-left: 0;
         z-index: 200;
+        position: absolute;
+        bottom: -52px;
+        left: 167px;
       }
 
       &--search {
@@ -202,7 +214,7 @@
         @include textsize(17px, 24px);
         width: 264px;
         padding-top: 31px;
-        padding-bottom: 35px;
+        padding-bottom: 33px;
         padding-right: 0;
         padding-left: 82px;
         order: 2;
@@ -240,14 +252,18 @@
   .header__text {
     display: block;
     position: absolute;
-    bottom: 10px;
-    right: 49px;
+    bottom: -42px;
+    right: 50px;
     font-weight: normal;
     z-index: 200;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .header__wrapper {
+    padding: 0;
+  }
+
   .header__logo {
     width: 282px;
     padding-top: 7px;
@@ -268,6 +284,7 @@
         padding-bottom: 34px;
         padding-left: 51px;
         order: 0;
+        position: static;
       }
 
       &--order {
@@ -278,20 +295,23 @@
         padding-bottom: 34px;
         border-left: 1px solid $light-grey;
         order: 1;
+        position: static;
       }
 
       &--search {
         order: 3;
+        border-right: 1px solid $light-grey;
+        border-left: 1px solid $light-grey;
+        height: 90px;
         padding-top: 36px;
         padding-right: 30px;
         padding-left: 32px;
         padding-bottom: 28px;
-        border-right: 1px solid $light-grey;
-        border-left: 1px solid $light-grey;
 
         svg {
-          top: 36px;
+          top: 50%;
           left: 31px;
+          transform: translateY(-50%);
         }
       }
 
@@ -319,6 +339,9 @@
         padding-bottom: 22px;
         order: 5;
         z-index: 200;
+        position: absolute;
+        bottom: -62px;
+        left: 0;
       }
 
       &--sale {
@@ -332,6 +355,9 @@
         padding-bottom: 22px;
         order: 6;
         z-index: 200;
+        position: absolute;
+        bottom: -62px;
+        left: 236px;
       }
     }
   }
@@ -353,7 +379,7 @@
   }
 
   .header__text {
-    bottom: 22px;
-    right: 100px;
+    bottom: -40px;
+    right: 49px;
   }
 }
