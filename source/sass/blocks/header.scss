@@ -369,10 +369,7 @@
       @include textsize(0, 0);
     }
 
-    &--new {
-      @include textsize(15px, 24px);
-    }
-
+    &--new,
     &--sale {
       @include textsize(15px, 24px);
     }
