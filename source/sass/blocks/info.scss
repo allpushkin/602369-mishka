@@ -60,9 +60,9 @@
     &--wrapper {
       width: $desktop-width;
       margin: 0 auto;
-      padding-top: 153px;
+      padding-top: 151px;
       padding-right: 273px;
-      padding-left: 276px;
+      padding-left: 242px;
       padding-bottom: 360px;
       background-image: url("../img/hero-desktop@1x.jpg");
 
@@ -76,6 +76,6 @@
 
   .info__tittle {
     @include textsize(53px, 57px);
-    padding: 0 27px;
+    padding: 0;
   }
 }
